@@ -1,5 +1,6 @@
 // @ts-check
 import { themes as prismThemes } from 'prism-react-renderer';
+import remarkYouTube from './src/remark/youtube.mjs';
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
@@ -32,12 +33,14 @@ const config = {
           routeBasePath: '/',
           sidebarPath: './sidebars.js',
           editUrl: 'https://github.com/reflow-auctions/docs/edit/main/',
+          remarkPlugins: [remarkYouTube],
         },
         blog: {
           path: 'releases',
           routeBasePath: 'releases',
           blogTitle: 'Release Notes',
           blogDescription: 'What changed in each Reflow Auctions release',
+          remarkPlugins: [remarkYouTube],
           blogSidebarTitle: 'Recent releases',
           blogSidebarCount: 10,
           postsPerPage: 20,

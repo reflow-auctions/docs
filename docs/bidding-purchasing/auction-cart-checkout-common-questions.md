@@ -141,7 +141,7 @@ Events that started before the feature was enabled, including their existing unp
 
 Buyers will use the **Auction Cart** to manage and pay for their auction purchases. From there, they can review their auction wins, Buy It Now purchases, open invoices, and auctions they are currently leading, and proceed to checkout when payment is available.
 
-For a step-by-step overview of the buyer experience, see the Auction cart\_Storefront part.
+For a step-by-step overview of the buyer experience, watch the [storefront walkthrough video](/bidding-purchasing/auction-cart-checkout#what-customers-see-on-the-storefront).
 
 ## What customers usually do
 
