@@ -131,11 +131,11 @@
 .theme-doc-sidebar-item-link-level-2 > .menu__link--active::before {
   content: '';
   position: absolute;
-  left: calc(-1 * var(--ifm-menu-link-padding-horizontal) - 0.25rem);
+  left: 0;
   top: 0.35rem;
   bottom: 0.35rem;
   width: 3px;
-  border-radius: 0 2px 2px 0;
+  border-radius: 2px;
   background: var(--reflow-sidebar-indicator);
 }
 
