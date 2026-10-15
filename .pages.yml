@@ -1,0 +1,77 @@
+# Pages CMS config — https://pagescms.org/docs/configuration/
+# Editors sign in at https://app.pagescms.org and pick reflow-auctions/docs.
+# Every save is a commit to main; GitHub Actions then rebuilds the site (~2 min).
+
+media:
+  input: static/img/docs
+  output: /img/docs
+  categories: [image]
+  rename: safe
+
+settings:
+  content:
+    # Keep front matter keys this form doesn't show (e.g. sidebar_label).
+    merge: true
+
+content:
+  - name: docs
+    label: Docs
+    type: collection
+    path: docs
+    subfolders: true
+    exclude: [_category_.json]
+    view:
+      layout: tree
+      fields: [title]
+      primary: title
+    fields:
+      - name: title
+        label: Page title
+        type: string
+        required: true
+      - name: description
+        label: Short description (shown in search results)
+        type: text
+      - name: sidebar_position
+        label: Position in its sidebar section (1 = first)
+        type: number
+      - name: body
+        label: Page content
+        type: rich-text
+        options:
+          format: markdown
+          switcher: true
+
+  - name: releases
+    label: Releases
+    type: collection
+    path: releases
+    filename:
+      template: "{primary}.md"
+      field: create
+    view:
+      fields: [title, date]
+      primary: title
+      sort: [date]
+      default:
+        sort: date
+        order: desc
+    fields:
+      - name: title
+        label: Version (e.g. v1.54.0) — the file name must match, e.g. v1.54.0.md
+        type: string
+        required: true
+        pattern:
+          regex: "^v\\d+\\.\\d+\\.\\d+$"
+          message: "Use the format v1.54.0"
+      - name: date
+        label: Release date
+        type: date
+        options:
+          format: yyyy-MM-dd
+      - name: body
+        label: Release notes (use the headings Features / Improvements / Fixes)
+        type: rich-text
+        options:
+          format: markdown
+          switcher: true
