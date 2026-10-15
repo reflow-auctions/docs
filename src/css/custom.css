@@ -72,7 +72,7 @@
 }
 
 /* ---------- Sidebar: Mantle-style flat sections ---------- */
-/* Values measured from reflow.mantledocs.com:
+/* Values measured from the old Mantle help center:
    section label 13px / 400 / uppercase / #8c8c8c
    page link     14px / 400 / 32px rows / #d9d9d9 (active: 500, #fff)
    8px label->links, 32px between sections. */
