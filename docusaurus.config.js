@@ -2,6 +2,19 @@
 import { themes as prismThemes } from 'prism-react-renderer';
 import remarkYouTube from './src/remark/youtube.mjs';
 
+// Outbound links get UTM tags so visits from the docs show up in analytics.
+// utm_content says where on the page the link was.
+const utm = (url, content) => {
+  const u = new URL(url);
+  u.searchParams.set('utm_source', 'docs.reflowauctions.com');
+  u.searchParams.set('utm_medium', 'referral');
+  u.searchParams.set('utm_campaign', 'help_center');
+  u.searchParams.set('utm_content', content);
+  return u.toString();
+};
+const WEBSITE = 'https://www.reflowauctions.com';
+const APP_STORE = 'https://apps.shopify.com/reflow-auctions';
+
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'Reflow Auctions Help Center',
@@ -101,13 +114,16 @@ const config = {
         items: [
           { type: 'docSidebar', sidebarId: 'docs', position: 'left', label: 'Docs' },
           { to: '/releases', label: 'Release Notes', position: 'left' },
-          { href: 'https://www.reflowauctions.com', label: 'reflowauctions.com', position: 'right' },
+          { href: utm(APP_STORE, 'navbar'), label: 'Shopify App Store', position: 'right' },
+          { href: utm(WEBSITE, 'navbar'), label: 'reflowauctions.com', position: 'right' },
         ],
       },
       footer: {
         style: 'light',
         links: [
-          { label: 'Privacy Policy', href: 'https://www.reflowauctions.com/privacy' },
+          { label: 'reflowauctions.com', href: utm(WEBSITE, 'footer') },
+          { label: 'Shopify App Store', href: utm(APP_STORE, 'footer') },
+          { label: 'Privacy Policy', href: utm(`${WEBSITE}/privacy`, 'footer') },
           { label: 'Release notes RSS', href: 'pathname:///releases/rss.xml' },
         ],
         copyright: `© ${new Date().getFullYear()} Reflow Auctions`,

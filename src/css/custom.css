@@ -208,12 +208,15 @@
 }
 
 /* Matched words: bold + underlined instead of a yellow marker
-   (dropdown and the full "See all results" page). */
+   (dropdown and the full "See all results" page). The plugin colours
+   <mark> with --search-local-highlight-color (our selected-row background),
+   so the selector needs more weight than its .hitWrapper mark rule. */
+.navbar [class*='dropdownMenu'] [class*='hitWrapper'] mark,
 [class*='dropdownMenu'] mark,
 [class*='searchResultItemSummary'] mark,
 .search-result-match {
   background: none;
-  color: inherit;
+  color: inherit !important;
   font-weight: 700;
   text-decoration: underline;
   text-underline-offset: 0.15em;
@@ -242,4 +245,51 @@
 [class*='searchQueryInput']:focus {
   border-color: var(--search-local-input-active-border-color);
   outline: none;
+}
+
+/* Search box: wider on desktop; on phones it expands across the navbar while
+   open (the plugin's default shrinks to a 44px icon and clips the text).
+   The container gets a .focused_* class while open; the widget also sets an
+   inline position: relative on the input, hence the !important. */
+.navbar__search-input {
+  width: 15rem;
+}
+
+@media (max-width: 576px) {
+  .navbar__search[class*='focused'] {
+    position: fixed !important;
+    top: calc((var(--ifm-navbar-height) - 2.25rem) / 2);
+    left: var(--ifm-navbar-padding-horizontal);
+    right: var(--ifm-navbar-padding-horizontal);
+    margin: 0 !important;
+    z-index: calc(var(--ifm-z-index-fixed) + 1);
+  }
+
+  .navbar__search[class*='focused'] [class*='searchBar'],
+  .navbar__search[class*='focused'] .navbar__search-input {
+    display: block;
+    width: 100% !important;
+  }
+
+  .navbar__search[class*='focused'] .navbar__search-input {
+    position: relative !important;
+    height: 2.25rem;
+  }
+
+  /* The widget's hidden measuring <pre> must not widen the page. */
+  .navbar__search pre {
+    max-width: 0;
+    overflow: hidden;
+  }
+
+  .navbar [class*='searchBar'] [class*='dropdownMenu'] {
+    position: fixed !important;
+    top: calc(var(--ifm-navbar-height) + 0.25rem) !important;
+    left: var(--ifm-navbar-padding-horizontal) !important;
+    right: var(--ifm-navbar-padding-horizontal) !important;
+    width: auto !important;
+    max-width: none !important;
+    max-height: calc(100dvh - var(--ifm-navbar-height) - 1rem);
+    overflow-y: auto;
+  }
 }
