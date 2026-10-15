@@ -18,21 +18,21 @@ Widget settings control the appearance and layout of auction elements on your st
 
 All widget display settings are managed inside your Shopify theme editor:
 
-1. **Open your Shopify theme editor**
+#### 1. Open your Shopify theme editor
 
-   In Shopify, go to **Online Store** → **Themes**, then click **Customize** on the theme you want to edit.
+In Shopify, go to **Online Store** → **Themes**, then click **Customize** on the theme you want to edit.
 
-2. **Open App embeds**
+#### 2. Open App embeds
 
-   In the theme editor sidebar, open **App embeds**.
+In the theme editor sidebar, open **App embeds**.
 
-3. **Select the auction embed**
+#### 3. Select the auction embed
 
-   Find and expand the auction app embed to view its customization options.
+Find and expand the auction app embed to view its customization options.
 
-4. **Adjust the widget settings**
+#### 4. Adjust the widget settings
 
-   Update the available appearance and behavior settings, then save your changes.
+Update the available appearance and behavior settings, then save your changes.
 
 :::tip
 

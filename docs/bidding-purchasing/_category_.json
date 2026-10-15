@@ -1,4 +1,6 @@
 {
   "label": "Bidding & Purchasing",
-  "position": 7
+  "position": 7,
+  "collapsible": false,
+  "collapsed": false
 }

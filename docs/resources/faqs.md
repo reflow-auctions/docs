@@ -24,25 +24,25 @@ This makes it possible to sell limited, collectible, or high-demand items throug
 
 To create your first auction:
 
-1. **Open Events**
+#### 1. Open Events
 
-   In your Shopify admin, open the Reflow Auctions App and go to the **Events** page.
+In your Shopify admin, open the Reflow Auctions App and go to the **Events** page.
 
-2. **Create an event**
+#### 2. Create an event
 
-   Create a new event to organize one or more auctions.
+Create a new event to organize one or more auctions.
 
-3. **Add auction products**
+#### 3. Add auction products
 
-   Click **Add auctions** and select an active Shopify product.
+Click **Add auctions** and select an active Shopify product.
 
-4. **Set auction rules**
+#### 4. Set auction rules
 
-   Configure the auction start time, end time, starting bid, bid increment, remaining time, and any additional time settings.
+Configure the auction start time, end time, starting bid, bid increment, remaining time, and any additional time settings.
 
-5. **Save or publish**
+#### 5. Save or publish
 
-   Save the auction as a draft if you want to review it later, or publish it when you're ready for customers to start bidding.
+Save the auction as a draft if you want to review it later, or publish it when you're ready for customers to start bidding.
 
 :::tip
 

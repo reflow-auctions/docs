@@ -30,47 +30,46 @@ If **Product creation** is not enabled, you will not be able to save Buyer’s f
 
 ## Set up Buyer’s fee
 
-::youtube[Set up a Buyer’s Fee]{#S9Yjatw2Jdo}
+::youtube{#S9Yjatw2Jdo title="Set up a Buyer’s Fee"}
+#### 1. Open Selling preferences
 
-1. **Open Selling preferences**
+Go to **Settings → Selling preferences**.
 
-   Go to **Settings → Selling preferences**.
+#### 2. Turn on Buyer’s fee
 
-2. **Turn on Buyer’s fee**
+Enable **Buyer’s fee** to start configuring the fee for your auctions.
 
-   Enable **Buyer’s fee** to start configuring the fee for your auctions.
+#### 3. Enter a percentage fee
 
-3. **Enter a percentage fee**
+Add the percentage you want to charge, such as **15%**. This amount is calculated from the final item price and added to the buyer’s total.
 
-   Add the percentage you want to charge, such as **15%**. This amount is calculated from the final item price and added to the buyer’s total.
+#### 4. Add a fixed fee if needed
 
-4. **Add a fixed fee if needed**
+Enable **Fixed fee** and enter a flat amount, such as **$5**, if you want to charge an additional set fee on each transaction.
 
-   Enable **Fixed fee** and enter a flat amount, such as **$5**, if you want to charge an additional set fee on each transaction.
+You can use a percentage fee and a fixed fee together.
 
-   You can use a percentage fee and a fixed fee together.
+#### 5. Enable Product creation
 
-5. **Enable Product creation**
+Turn on **Product creation**. This allows the app to automatically create the Shopify product required to add the fee at checkout.
 
-   Turn on **Product creation**. This allows the app to automatically create the Shopify product required to add the fee at checkout.
+:::note
 
-   :::note
+The product is created with the default title **Buyer’s Fee**. You can rename it later in Shopify admin if needed.
 
-   The product is created with the default title **Buyer’s Fee**. You can rename it later in Shopify admin if needed.
+:::
 
-   :::
+#### 6. Confirm product creation
 
-6. **Confirm product creation**
+When the confirmation modal appears, confirm the action to create the fee product.
 
-   When the confirmation modal appears, confirm the action to create the fee product.
+After confirmation, the app creates the product automatically and shows a success message.
 
-   After confirmation, the app creates the product automatically and shows a success message.
+#### 7. Save your changes
 
-7. **Save your changes**
+Click **Save** to apply the settings. Once saved, the configured buyer’s fee will be used for eligible auctions.
 
-   Click **Save** to apply the settings. Once saved, the configured buyer’s fee will be used for eligible auctions.
-
-   ![image](/img/docs/settings/buyers-fee-1.png)
+![image](/img/docs/settings/buyers-fee-1.png)
 
 ## How Buyer’s fee is calculated
 

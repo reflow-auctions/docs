@@ -112,14 +112,12 @@ Review the email settings before launching Auction Cart & Checkout to make sure 
 
 The video below shows how to configure the required **Auction Cart & Checkout** settings in the Reflow Auctions Admin app.
 
-::youtube[Auction Cart & Checkout — Admin setup walkthrough]{#0mdLfrYy6RQ}
-
+::youtube{#0mdLfrYy6RQ title="Auction Cart & Checkout — Admin setup walkthrough"}
 ## What customers see on the storefront
 
 The video below shows the customer experience with **Auction Cart & Checkout**, including how bidders can purchase items using **Buy It Now**, place bids, review their Auction Cart, and pay their invoices through Shopify checkout.
 
-::youtube[Auction Cart & Checkout — what buyers see]{#60WVHBK7aPM}
-
+::youtube{#60WVHBK7aPM title="Auction Cart & Checkout — what buyers see"}
 With **Auction Cart & Checkout** enabled, customers stay closer to the normal Shopify buying experience.
 
 - They can review auction-related items in the **Auction Cart**.

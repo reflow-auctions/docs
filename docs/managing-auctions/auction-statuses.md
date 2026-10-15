@@ -84,21 +84,21 @@ If an auction ends with a winning bidder through regular bidding, the status is 
 
 ## How Status Changes Happen
 
-1. **Draft**
+#### 1. Draft
 
-   The auction is being prepared and is not yet visible to buyers.
+The auction is being prepared and is not yet visible to buyers.
 
-2. **Scheduled**
+#### 2. Scheduled
 
-   After publication, the auction becomes scheduled until its configured start time arrives.
+After publication, the auction becomes scheduled until its configured start time arrives.
 
-3. **Running**
+#### 3. Running
 
-   At the start time, the auction goes live and begins accepting bids.
+At the start time, the auction goes live and begins accepting bids.
 
-4. **Finished or Sold / Buy It Now**
+#### 4. Finished or Sold / Buy It Now
 
-   The auction either ends normally at the end of the bidding period or closes early if a buyer uses Buy It Now.
+The auction either ends normally at the end of the bidding period or closes early if a buyer uses Buy It Now.
 
 ## Quick Reference
 

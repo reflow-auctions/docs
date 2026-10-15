@@ -23,29 +23,29 @@ If you still need to configure details like Buy It Now, it is best to create auc
 
 ## Create auctions for an event
 
-1. **Open the event**
+#### 1. Open the event
 
-   Go to the event where you want to create auctions. Auctions are always created inside a specific event.
+Go to the event where you want to create auctions. Auctions are always created inside a specific event.
 
-   ![Event page with the Add auction button highlighted in the top right corner](/img/docs/auction-setup/auctions-1.png)
+![Event page with the Add auction button highlighted in the top right corner](/img/docs/auction-setup/auctions-1.png)
 
-2. **Select products or collections**
+#### 2. Select products or collections
 
-   Choose products from your Shopify catalog. You can browse individual products or switch to collections to add multiple products more efficiently.
+Choose products from your Shopify catalog. You can browse individual products or switch to collections to add multiple products more efficiently.
 
-   ![Add products or collections window showing selectable products for auction creation](/img/docs/auction-setup/auctions-2.png)
+![Add products or collections window showing selectable products for auction creation](/img/docs/auction-setup/auctions-2.png)
 
-3. **Set the default auction parameters**
+#### 3. Set the default auction parameters
 
-   Enter the settings you want applied to all selected products in this batch.
+Enter the settings you want applied to all selected products in this batch.
 
-4. **Choose Draft or Active**
+#### 4. Choose Draft or Active
 
-   Decide whether to save the auctions as **Draft** or publish them immediately. This choice determines whether the auctions are visible in the magazine right away.
+Decide whether to save the auctions as **Draft** or publish them immediately. This choice determines whether the auctions are visible in the magazine right away.
 
-5. **Review individual auctions if needed**
+#### 5. Review individual auctions if needed
 
-   After the auctions are created, you can open any individual auction and adjust its settings without changing the others.
+After the auctions are created, you can open any individual auction and adjust its settings without changing the others.
 
 ## Setting default auction parameters
 

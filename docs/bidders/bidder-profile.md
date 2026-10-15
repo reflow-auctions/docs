@@ -22,25 +22,25 @@ Use the Bidder Profile block when you want to review or update a customer’s au
 
 Before you can manage auction access for a customer, you need to add the Reflow Auctions block to the customer details page in Shopify Admin.
 
-1. **Open Customers in Shopify Admin**
+#### 1. Open Customers in Shopify Admin
 
-   Go to **Shopify Admin → Customers**, then open any customer record.
+Go to **Shopify Admin → Customers**, then open any customer record.
 
-2. **Find the Blocks section**
+#### 2. Find the Blocks section
 
-   Scroll down on the customer details page until you see the **Blocks** section.
+Scroll down on the customer details page until you see the **Blocks** section.
 
-3. **Add the Reflow Auctions block**
+#### 3. Add the Reflow Auctions block
 
-   Click **\+ Block**, then select **Reflow Auctions**.
+Click **\+ Block**, then select **Reflow Auctions**.
 
-4. **Confirm the Bidder Profile block appears**
+#### 4. Confirm the Bidder Profile block appears
 
-   After adding the block, the **Bidder Profile** block is placed on the customer page automatically.
+After adding the block, the **Bidder Profile** block is placed on the customer page automatically.
 
-5. **Pin it for your team if needed**
+#### 5. Pin it for your team if needed
 
-   If you want the block to appear for everyone on your staff, click **Pin to pages for all staff**.
+If you want the block to appear for everyone on your staff, click **Pin to pages for all staff**.
 
 :::tip
 

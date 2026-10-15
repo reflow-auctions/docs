@@ -1,4 +1,6 @@
 {
   "label": "Managing Auctions",
-  "position": 5
+  "position": 5,
+  "collapsible": false,
+  "collapsed": false
 }

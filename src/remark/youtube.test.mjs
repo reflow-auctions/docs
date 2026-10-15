@@ -22,6 +22,11 @@ test('::youtube becomes a <YouTube> JSX element with id and title', () => {
   assert.deepEqual(node.children, []);
 });
 
+test('title="…" attribute form (editor-safe) works', () => {
+  const [node] = run('::youtube{#S9Yjatw2Jdo title="Set up a Buyer’s Fee"}');
+  assert.deepEqual(node.attributes.map((a) => a.value), ['S9Yjatw2Jdo', 'Set up a Buyer’s Fee']);
+});
+
 test('id may also be given as id="…"', () => {
   const [node] = run('::youtube[Admin setup]{id="0mdLfrYy6RQ"}');
   assert.equal(node.attributes[0].value, '0mdLfrYy6RQ');

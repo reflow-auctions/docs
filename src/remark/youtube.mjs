@@ -1,9 +1,11 @@
 // Remark plugin: turns a Markdown leaf directive into the <YouTube> component.
 //
-//   ::youtube[Set up a Buyer’s Fee]{#S9Yjatw2Jdo}
+//   ::youtube{#S9Yjatw2Jdo title="Set up a Buyer’s Fee"}
 //
-// The [label] is the video title (used for accessibility and the button text).
 // The id is the 11-character YouTube video id ({#id} or {id="id"}).
+// title="…" is the video title (accessibility + caption). This form survives the
+// Pages CMS visual editor unchanged; the older ::youtube[Title]{#id} form also
+// renders, but the editor escapes its brackets, so check-content rejects it.
 // Works in plain .md files: Docusaurus parses directives in both md and mdx.
 // The component itself is registered globally in src/theme/MDXComponents.js.
 
@@ -31,7 +33,7 @@ export default function remarkYouTube() {
       if (!ID_RE.test(id ?? '')) {
         const where = `${file?.path ?? 'markdown'} line ${node.position?.start.line ?? '?'}`;
         throw new Error(
-          `::youtube needs an 11-character YouTube video id, e.g. ::youtube[Title]{#S9Yjatw2Jdo} `
+          `::youtube needs an 11-character YouTube video id, e.g. ::youtube{#S9Yjatw2Jdo title="Title"} `
           + `(got ${JSON.stringify(id)}) in ${where}`,
         );
       }
@@ -40,7 +42,7 @@ export default function remarkYouTube() {
         name: 'YouTube',
         attributes: [
           { type: 'mdxJsxAttribute', name: 'id', value: id },
-          { type: 'mdxJsxAttribute', name: 'title', value: labelText(node) || 'Video' },
+          { type: 'mdxJsxAttribute', name: 'title', value: node.attributes?.title || labelText(node) || 'Video' },
         ],
         children: [],
       };

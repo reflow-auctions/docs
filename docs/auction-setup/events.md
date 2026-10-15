@@ -16,21 +16,21 @@ The estimated end time helps organize the event schedule, but it does not automa
 
 ### How to create an event
 
-1. **Open the Admin app**
+#### 1. Open the Admin app
 
-   Go to the area where events are managed.
+Go to the area where events are managed.
 
-2. **Enter the event title**
+#### 2. Enter the event title
 
-   Add a clear, recognizable title so your team can easily identify the event.
+Add a clear, recognizable title so your team can easily identify the event.
 
-3. **Set the estimated end date and time**
+#### 3. Set the estimated end date and time
 
-   Choose the date and time you expect the event to finish.
+Choose the date and time you expect the event to finish.
 
-4. **Save the event**
+#### 4. Save the event
 
-   Once saved, the event is ready for auctions to be added and managed.
+Once saved, the event is ready for auctions to be added and managed.
 
 ### How event timing works
 

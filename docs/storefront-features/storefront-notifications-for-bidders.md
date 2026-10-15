@@ -26,21 +26,21 @@ The panel lets bidders review updates without leaving the page. If a notificatio
 
 ### How notifications work
 
-1. **Open the Notification Center**
+#### 1. Open the Notification Center
 
-   Go to **My Auctions** and select the **Notifications** icon.
+Go to **My Auctions** and select the **Notifications** icon.
 
-2. **Choose a notification tab**
+#### 2. Choose a notification tab
 
-   Use the tabs at the top of the panel to view **All**, **Auctions**, **Invoices**, or **Orders** notifications.
+Use the tabs at the top of the panel to view **All**, **Auctions**, **Invoices**, or **Orders** notifications.
 
-3. **Review unread activity**
+#### 3. Review unread activity
 
-   Unread notifications are highlighted with a visual indicator so bidders can quickly spot new activity.
+Unread notifications are highlighted with a visual indicator so bidders can quickly spot new activity.
 
-4. **Open the related item**
+#### 4. Open the related item
 
-   Select a notification to open the related auction, invoice, or order. After it is opened, the notification is marked as read.
+Select a notification to open the related auction, invoice, or order. After it is opened, the notification is marked as read.
 
 :::tip
 

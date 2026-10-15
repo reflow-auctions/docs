@@ -51,21 +51,21 @@ Proxy bidding is helpful for customers who want to stay competitive without watc
 
 ### How proxy bidding works
 
-1. **Enter a maximum bid**
+#### 1. Enter a maximum bid
 
-   The customer enters the highest amount they are willing to pay for the listing. This is their maximum, not necessarily the amount they will pay.
+The customer enters the highest amount they are willing to pay for the listing. This is their maximum, not necessarily the amount they will pay.
 
-2. **System places the minimum winning bid**
+#### 2. System places the minimum winning bid
 
-   The platform automatically places the lowest bid needed to make them the current highest bidder, based on the required bid increment.
+The platform automatically places the lowest bid needed to make them the current highest bidder, based on the required bid increment.
 
-3. **Automatic increases happen only when needed**
+#### 3. Automatic increases happen only when needed
 
-   If another bidder places a competing bid, the system increases the proxy bidder’s amount in preset increments, but never above the customer’s maximum.
+If another bidder places a competing bid, the system increases the proxy bidder’s amount in preset increments, but never above the customer’s maximum.
 
-4. **Customer either wins or is outbid**
+#### 4. Customer either wins or is outbid
 
-   If no one bids above their maximum, they remain in the lead and can win the item. If another bidder goes higher than their maximum, they are outbid.
+If no one bids above their maximum, they remain in the lead and can win the item. If another bidder goes higher than their maximum, they are outbid.
 
 :::note
 

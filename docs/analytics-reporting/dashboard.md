@@ -16,21 +16,21 @@ The Dashboard shows high-level results across your events and auctions. For item
 
 ## Use the Dashboard
 
-1. **Choose a timeframe**
+#### 1. Choose a timeframe
 
-   Use the date picker at the top of the Dashboard to view results for **today** or for a custom date range.
+Use the date picker at the top of the Dashboard to view results for **today** or for a custom date range.
 
-2. **Compare performance**
+#### 2. Compare performance
 
-   Turn on the comparison option to compare the selected timeframe with a previous period, such as the previous day, week, month, or year.
+Turn on the comparison option to compare the selected timeframe with a previous period, such as the previous day, week, month, or year.
 
-3. **Review top metrics**
+#### 3. Review top metrics
 
-   Start with the summary cards to quickly understand revenue, average auction value, bidding activity, and buyer engagement.
+Start with the summary cards to quickly understand revenue, average auction value, bidding activity, and buyer engagement.
 
-4. **Check event and auction status**
+#### 4. Check event and auction status
 
-   Scroll down to see how many events are active or finished, and how many auctions are active, scheduled, running, finished, canceled, or still in draft.
+Scroll down to see how many events are active or finished, and how many auctions are active, scheduled, running, finished, canceled, or still in draft.
 
 ## Customize the Dashboard
 

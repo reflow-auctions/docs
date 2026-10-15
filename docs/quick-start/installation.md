@@ -14,33 +14,33 @@ After installation, Reflow Auctions appears in your Shopify admin under **Apps**
 
 ## Install the app from the Shopify App Store
 
-1. **Sign in to your Shopify store**
+#### 1. Sign in to your Shopify store
 
-   Go to your Shopify admin and sign in with an account that has permission to install apps.
+Go to your Shopify admin and sign in with an account that has permission to install apps.
 
-2. **Open the Shopify App Store**
+#### 2. Open the Shopify App Store
 
-   In Shopify, open the **Shopify App Store** and search for **Reflow Auctions**.
+In Shopify, open the **Shopify App Store** and search for **Reflow Auctions**.
 
-3. **Open the Reflow Auctions listing**
+#### 3. Open the Reflow Auctions listing
 
-   Select **Reflow Auctions** from the search results to view the app details page.
+Select **Reflow Auctions** from the search results to view the app details page.
 
-4. **Click Add app**
+#### 4. Click Add app
 
-   Click **Add app** to start the installation.
+Click **Add app** to start the installation.
 
-5. **Review the requested permissions**
+#### 5. Review the requested permissions
 
-   Shopify redirects you back to your store admin, where you can review the permissions the app needs in order to run auctions, manage listings, and create winning orders.
+Shopify redirects you back to your store admin, where you can review the permissions the app needs in order to run auctions, manage listings, and create winning orders.
 
-6. **Click Install app**
+#### 6. Click Install app
 
-   When you are ready, click **Install app** to approve the permissions and complete the installation.
+When you are ready, click **Install app** to approve the permissions and complete the installation.
 
-7. **Open the app and finish setup**
+#### 7. Open the app and finish setup
 
-   After installation, open **Reflow Auctions** from the **Apps** section in Shopify and follow the setup flow to start creating auction events and listings.
+After installation, open **Reflow Auctions** from the **Apps** section in Shopify and follow the setup flow to start creating auction events and listings.
 
 ![Shopify install app window showing Reflow Auctions permissions and the Install button](/img/docs/quick-start/installation-1.png)
 

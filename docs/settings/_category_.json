@@ -1,4 +1,6 @@
 {
   "label": "Settings",
-  "position": 10
+  "position": 10,
+  "collapsible": false,
+  "collapsed": false
 }

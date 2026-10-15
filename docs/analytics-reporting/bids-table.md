@@ -55,21 +55,21 @@ The exact date and timestamp when the bid or event was recorded.
 
 ## How to use the Bids Table
 
-1. **Open the Bids page**
+#### 1. Open the Bids page
 
-   Go to the app admin and open **Bids** from the auction navigation.
+Go to the app admin and open **Bids** from the auction navigation.
 
-2. **Search for a bidder**
+#### 2. Search for a bidder
 
-   Use the **Search by bidder** field to find bid activity for a specific customer.
+Use the **Search by bidder** field to find bid activity for a specific customer.
 
-3. **Apply filters**
+#### 3. Apply filters
 
-   Select **Add filter** to narrow the results and focus on the records most relevant to your review.
+Select **Add filter** to narrow the results and focus on the records most relevant to your review.
 
-4. **Review bid details**
+#### 4. Review bid details
 
-   Scan the table to compare bid amounts, bid types, auction names, and timestamps.
+Scan the table to compare bid amounts, bid types, auction names, and timestamps.
 
 ## When to use this page
 

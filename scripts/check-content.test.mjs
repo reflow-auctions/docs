@@ -23,12 +23,10 @@ test('bad title and bad date are flagged', () => {
   ]);
 });
 
-test('::youtube needs an 11-character video id', () => {
-  const ok = { file: 'docs/a.md', content: '::youtube[Title]{#S9Yjatw2Jdo}\n::youtube[T]{id="0mdLfrYy6RQ"}' };
-  const bad = { file: 'docs/b.md', content: 'x\n::youtube[Title]{#https://youtu.be/S9Yjatw2Jdo}\n::youtube[No id]' };
+test('::youtube must use the editor-safe form with an 11-character id', () => {
+  const ok = { file: 'docs/a.md', content: '::youtube{#S9Yjatw2Jdo title="Set up a Buyer’s Fee"}\n::youtube{id="0mdLfrYy6RQ"}' };
+  const bad = { file: 'docs/b.md', content: 'x\n::youtube{#https://youtu.be/S9Yjatw2Jdo}\n::youtube[Old form]{#S9Yjatw2Jdo}\n   ::youtube{#S9Yjatw2Jdo}' };
+  const hint = '::youtube needs the form ::youtube{#VIDEO_ID title="Title"} with an 11-character video id';
   assert.deepEqual(findProblems([ok]), []);
-  assert.deepEqual(findProblems([bad]), [
-    'docs/b.md:2: ::youtube needs an 11-character video id, e.g. ::youtube[Title]{#S9Yjatw2Jdo}',
-    'docs/b.md:3: ::youtube needs an 11-character video id, e.g. ::youtube[Title]{#S9Yjatw2Jdo}',
-  ]);
+  assert.deepEqual(findProblems([bad]), [`docs/b.md:2: ${hint}`, `docs/b.md:3: ${hint}`, `docs/b.md:4: ${hint}`]);
 });

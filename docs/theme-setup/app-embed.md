@@ -16,21 +16,21 @@ Turning on the app embed automatically installs the Auctions widget on your coll
 
 ## How to enable Reflow Auctions in your theme
 
-1. **Open your Shopify Theme Editor**
+#### 1. Open your Shopify Theme Editor
 
-   In Shopify, go to your online store theme and open the **Theme Editor** for the theme you want to use with Reflow Auctions.
+In Shopify, go to your online store theme and open the **Theme Editor** for the theme you want to use with Reflow Auctions.
 
-2. **Go to App Embeds**
+#### 2. Go to App Embeds
 
-   In the Theme Editor sidebar, open **App Embeds**. This is where Shopify manages app-level theme features.
+In the Theme Editor sidebar, open **App Embeds**. This is where Shopify manages app-level theme features.
 
-3. **Turn on Reflow Auctions**
+#### 3. Turn on Reflow Auctions
 
-   Find **Reflow Auctions** or **Auction Embed** in the list, then switch it **on**.
+Find **Reflow Auctions** or **Auction Embed** in the list, then switch it **on**.
 
-4. **Save your changes**
+#### 4. Save your changes
 
-   Save the theme after enabling the embed so the auction widgets appear on your storefront.
+Save the theme after enabling the embed so the auction widgets appear on your storefront.
 
 ## What happens after you enable it
 

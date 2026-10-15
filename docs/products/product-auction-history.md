@@ -31,25 +31,25 @@ For the selected product, the block lists all related auctions in one place. Thi
 
 ## How to add the Auction History block
 
-1. **Open Products in Shopify admin**
+#### 1. Open Products in Shopify admin
 
-   Go to **Shopify Admin → Products**.
+Go to **Shopify Admin → Products**.
 
-2. **Open a product**
+#### 2. Open a product
 
-   Select any product to open its **Product details** page.
+Select any product to open its **Product details** page.
 
-3. **Add the app block**
+#### 3. Add the app block
 
-   Scroll to the **Blocks** section and click **\+ Block**.
+Scroll to the **Blocks** section and click **\+ Block**.
 
-4. **Choose Reflow Auctions**
+#### 4. Choose Reflow Auctions
 
-   Select **Reflow Auctions**. The **Auction History** block is added automatically.
+Select **Reflow Auctions**. The **Auction History** block is added automatically.
 
-5. **Optional: pin the block for your team**
+#### 5. Optional: pin the block for your team
 
-   If needed, click **Pin to pages for all staff** so the block appears for other staff members as well.
+If needed, click **Pin to pages for all staff** so the block appears for other staff members as well.
 
 :::tip
 
