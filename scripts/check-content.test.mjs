@@ -23,6 +23,25 @@ test('bad title and bad date are flagged', () => {
   ]);
 });
 
+test('indented blocks inside numbered lists are flagged (editor re-indents them)', () => {
+  const hint = 'put step content under a "#### N. Title" heading, not indented inside a numbered list (Pages CMS shifts it on every save)';
+  const bad = { file: 'docs/a.md', content: [
+    '1. **Open**', '', '   Go there.', '', '   ![shot](/img/x.png)', '2. **Save**', '',
+    '   :::note', '', '   Careful.', '', '   :::',
+  ].join('\n') };
+  assert.deepEqual(findProblems([bad]), [`docs/a.md:5: ${hint}`, `docs/a.md:8: ${hint}`]);
+});
+
+test('safe list shapes and step headings pass', () => {
+  const ok = { file: 'docs/b.md', content: [
+    '1. One paragraph is fine', '', '   Its continuation.', '2. Nested bullets', '   - a', '   - b', '',
+    '- Bullet', '', '  Two paragraphs in a bullet are fine.', '',
+    '#### 1. Open', '', 'Go there.', '', '![shot](/img/x.png)', '',
+    '```', '1. **in a code block**', '', '   ![not real](/x.png)', '```',
+  ].join('\n') };
+  assert.deepEqual(findProblems([ok]), []);
+});
+
 test('::youtube must use the editor-safe form with an 11-character id', () => {
   const ok = { file: 'docs/a.md', content: '::youtube{#S9Yjatw2Jdo title="Set up a Buyer’s Fee"}\n::youtube{id="0mdLfrYy6RQ"}' };
   const bad = { file: 'docs/b.md', content: 'x\n::youtube{#https://youtu.be/S9Yjatw2Jdo}\n::youtube[Old form]{#S9Yjatw2Jdo}\n   ::youtube{#S9Yjatw2Jdo}' };
