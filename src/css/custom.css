@@ -144,3 +144,68 @@
   height: 1.75rem;
   margin-right: 0.6rem;
 }
+
+/* ---------- Search dropdown (@easyops-cn/docusaurus-search-local) ---------- */
+/* The plugin highlights the selected result with --ifm-color-primary, which is
+   near-white in our dark theme, so white text became unreadable. Set its own
+   variables instead. */
+:root {
+  --search-local-modal-background: #f7f7f7;
+  --search-local-modal-shadow: 0 8px 24px rgba(0, 0, 0, 0.12), 0 0 0 1px #e5e5e5;
+  --search-local-hit-background: #ffffff;
+  --search-local-hit-shadow: 0 0 0 1px #ececec;
+  --search-local-hit-color: #262626;
+  --search-local-muted-color: #737373;
+  --search-local-highlight-color: #1a1a1a;
+  --search-local-hit-active-color: #ffffff;
+  --search-local-input-active-border-color: #1a1a1a;
+}
+
+[data-theme='dark'] {
+  --search-local-modal-background: #0f0f0f;
+  --search-local-modal-shadow: 0 8px 24px rgba(0, 0, 0, 0.6), 0 0 0 1px #2b2b2b;
+  --search-local-hit-background: #1c1c1c;
+  --search-local-hit-shadow: 0 0 0 1px #2b2b2b;
+  --search-local-hit-color: #d9d9d9;
+  --search-local-muted-color: #8c8c8c;
+  --search-local-highlight-color: #2e2e2e;
+  --search-local-hit-active-color: #ffffff;
+  --search-local-input-active-border-color: #8c8c8c;
+}
+
+/* Matched words: bold + underlined instead of a yellow marker
+   (dropdown and the full "See all results" page). */
+[class*='dropdownMenu'] mark,
+[class*='searchResultItemSummary'] mark,
+.search-result-match {
+  background: none;
+  color: inherit;
+  font-weight: 700;
+  text-decoration: underline;
+  text-underline-offset: 0.15em;
+}
+
+/* Full search page (/search): quiet dividers, gray path, readable summary. */
+[class*='searchResultItem_'] {
+  border-bottom-color: var(--ifm-toc-border-color) !important;
+}
+
+[class*='searchResultItemPath'] {
+  color: var(--ifm-color-content-secondary);
+  font-size: 0.875rem;
+}
+
+[class*='searchResultItemSummary'] {
+  font-style: normal;
+  color: var(--ifm-color-content);
+}
+
+[class*='searchQueryInput'] {
+  border-color: var(--ifm-toc-border-color);
+  background: var(--ifm-background-surface-color);
+}
+
+[class*='searchQueryInput']:focus {
+  border-color: var(--search-local-input-active-border-color);
+  outline: none;
+}
