@@ -30,7 +30,7 @@ If **Product creation** is not enabled, you will not be able to save Buyer’s f
 
 ## Set up Buyer’s fee
 
-Set up Buyer’s Fee Video Guide
+::youtube[Set up a Buyer’s Fee]{#S9Yjatw2Jdo}
 
 1. **Open Selling preferences**
 

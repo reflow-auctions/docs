@@ -2,18 +2,16 @@
 
 Things the migration left for a human. Each one is safe to do in Pages CMS (Source mode) or by editing the file directly.
 
-## 1. Video links (3 videos, 4 places)
+## 1. Video links ✅ done
 
-Upload these files from `mantle-videos/` (YouTube unlisted or Loom), then turn the text below into a link.
+Embedded with the reusable `::youtube` component (click-to-load, youtube-nocookie, `rel=0`).
+To add a video anywhere, put this on its own line (in Pages CMS use **Source** mode):
 
-| File to upload | Page | Line | Text to turn into a link |
-|---|---|---|---|
-| `Buyers_20Fee_Product.mp4` | `docs/settings/buyers-fee.md` | 33 | `Set up Buyer’s Fee Video Guide` |
-| `Auction_cart_Admin_app_part.mp4` | `docs/bidding-purchasing/auction-cart-checkout.md` | 115 | `Auction Cart & Checkout — Admin setup walkthrough` |
-| `Auction_cart_Storefront_part.mp4` | `docs/bidding-purchasing/auction-cart-checkout.md` | 121 | `Auction Cart & Checkout — Storefront walkthrough` |
-| `Auction_cart_Storefront_part.mp4` (same video) | `docs/bidding-purchasing/auction-cart-checkout-common-questions.md` | 144 | `Auction cart\_Storefront part` (also reword this; it was a file name on Mantle) |
+```
+::youtube[Video title]{#VIDEO_ID}
+```
 
-Link format: `[Set up Buyer’s Fee Video Guide](https://youtu.be/XXXX)`
+`VIDEO_ID` is the 11 characters after `watch?v=` in the YouTube URL. The content check fails the build if it's wrong.
 
 ## 2. Dead "related page" cards (already 404 on Mantle; now plain text)
 

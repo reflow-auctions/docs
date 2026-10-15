@@ -22,3 +22,13 @@ test('bad title and bad date are flagged', () => {
     'releases/x.md: date must be YYYY-MM-DD (got 09/24/2026)',
   ]);
 });
+
+test('::youtube needs an 11-character video id', () => {
+  const ok = { file: 'docs/a.md', content: '::youtube[Title]{#S9Yjatw2Jdo}\n::youtube[T]{id="0mdLfrYy6RQ"}' };
+  const bad = { file: 'docs/b.md', content: 'x\n::youtube[Title]{#https://youtu.be/S9Yjatw2Jdo}\n::youtube[No id]' };
+  assert.deepEqual(findProblems([ok]), []);
+  assert.deepEqual(findProblems([bad]), [
+    'docs/b.md:2: ::youtube needs an 11-character video id, e.g. ::youtube[Title]{#S9Yjatw2Jdo}',
+    'docs/b.md:3: ::youtube needs an 11-character video id, e.g. ::youtube[Title]{#S9Yjatw2Jdo}',
+  ]);
+});
