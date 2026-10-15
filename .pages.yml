@@ -20,6 +20,11 @@ content:
     path: docs
     subfolders: true
     exclude: [_category_.json]
+    # Name new pages after their title (e.g. "Bulk Actions" -> bulk-actions.md),
+    # never a date prefix: the file name is the page's URL.
+    filename:
+      template: "{primary}.md"
+      field: create
     view:
       layout: tree
       fields: [title]
@@ -67,6 +72,7 @@ content:
       - name: date
         label: Release date
         type: date
+        required: true
         options:
           format: yyyy-MM-dd
       - name: body
