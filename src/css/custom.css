@@ -72,6 +72,16 @@
 }
 
 /* ---------- Sidebar: Mantle-style flat sections ---------- */
+/* Values measured from reflow.mantledocs.com:
+   section label 13px / 400 / uppercase / #8c8c8c
+   page link     14px / 400 / 32px rows / #d9d9d9 (active: 500, #fff)
+   8px label->links, 32px between sections. */
+
+.theme-doc-sidebar-menu {
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
 
 /* Section headers: small, uppercase, gray, not clickable-looking. */
 .theme-doc-sidebar-item-category-level-1 > .menu__list-item-collapsible {
@@ -81,11 +91,13 @@
 
 .theme-doc-sidebar-item-category-level-1 > .menu__list-item-collapsible > .menu__link {
   color: var(--reflow-sidebar-label);
-  font-size: 0.75rem;
-  font-weight: 500;
-  letter-spacing: 0.04em;
+  font-size: 0.8125rem;
+  font-weight: 400;
+  line-height: 1.4;
+  letter-spacing: 0.02em;
   text-transform: uppercase;
-  padding-bottom: 0.25rem;
+  padding: 0 var(--ifm-menu-link-padding-horizontal);
+  margin-bottom: 0.5rem;
   cursor: default;
 }
 
@@ -95,36 +107,45 @@
   display: none;
 }
 
-/* Space between sections, like Mantle. */
-.theme-doc-sidebar-item-category-level-1 {
-  margin-top: 1.25rem;
+/* Space between sections (beats Infima's .menu__list-item:not(:first-child)). */
+.theme-doc-sidebar-menu > .menu__list-item.theme-doc-sidebar-item-category-level-1 {
+  margin-top: 2rem;
 }
 
-.theme-doc-sidebar-menu > .theme-doc-sidebar-item-category-level-1:first-child {
-  margin-top: 0.25rem;
+.theme-doc-sidebar-menu > .menu__list-item.theme-doc-sidebar-item-category-level-1:first-child {
+  margin-top: 0.5rem;
 }
 
-/* Page links: flush with the section header, no indent. */
+/* Page links: flush with the section header, no indent, no gaps between rows. */
 .theme-doc-sidebar-item-category-level-1 > .menu__list {
   padding-left: 0;
   margin-top: 0;
 }
 
+.theme-doc-sidebar-item-category-level-1 > .menu__list > .menu__list-item.theme-doc-sidebar-item-link {
+  margin-top: 0;
+}
+
 .theme-doc-sidebar-item-link-level-2 > .menu__link {
   color: var(--reflow-sidebar-link);
-  font-size: 0.9375rem;
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 2rem;
+  padding-top: 0;
+  padding-bottom: 0;
   border-radius: 0;
   position: relative;
 }
 
 .theme-doc-sidebar-item-link-level-2 > .menu__link:hover {
   color: var(--reflow-sidebar-link-active);
+  background: none;
 }
 
-/* Active page: bright text + white bar on the left edge (Mantle style). */
+/* Active page: bright text, slightly heavier, white bar on the left edge. */
 .theme-doc-sidebar-item-link-level-2 > .menu__link--active {
   color: var(--reflow-sidebar-link-active);
-  font-weight: 600;
+  font-weight: 500;
   background: none;
 }
 
@@ -132,11 +153,24 @@
   content: '';
   position: absolute;
   left: 0;
-  top: 0.35rem;
-  bottom: 0.35rem;
+  top: 0.4rem;
+  bottom: 0.4rem;
   width: 3px;
   border-radius: 2px;
   background: var(--reflow-sidebar-indicator);
+}
+
+/* Mobile drawer: same typography, a little more air at the edges. */
+.navbar-sidebar .theme-doc-sidebar-menu {
+  padding: 0 0.25rem;
+}
+
+.navbar-sidebar__back {
+  font-weight: 400;
+  font-size: 0.875rem;
+  color: var(--reflow-sidebar-link);
+  background: none;
+  margin-bottom: 0.5rem;
 }
 
 /* Logo next to the site name. */
