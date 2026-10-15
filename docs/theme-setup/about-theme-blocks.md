@@ -21,33 +21,33 @@ Before adding theme blocks, make sure you already created at least one auction i
 
 ## Open the Shopify Theme Editor
 
-1. **Go to your theme settings**
+#### 1. Go to your theme settings
 
-   In Shopify Admin, open **Online Store**, then **Themes**.
+In Shopify Admin, open **Online Store**, then **Themes**.
 
-2. **Open your current theme**
+#### 2. Open your current theme
 
-   In the **Current theme** section, click **Customize**.
+In the **Current theme** section, click **Customize**.
 
-3. **Find Reflow Auctions**
+#### 3. Find Reflow Auctions
 
-   Inside the Theme Editor, use the left sidebar to work with **App embeds** and app blocks from **Reflow Auctions**.
+Inside the Theme Editor, use the left sidebar to work with **App embeds** and app blocks from **Reflow Auctions**.
 
 ## Enable the Reflow Auctions app embed
 
 Before your blocks can work correctly on the storefront, enable the app embed for Reflow Auctions.
 
-1. **Open App embeds**
+#### 1. Open App embeds
 
-   In the Theme Editor, open **App embeds**.
+In the Theme Editor, open **App embeds**.
 
-2. **Turn on Reflow Auctions**
+#### 2. Turn on Reflow Auctions
 
-   Find **Reflow Auctions** in the list and enable it.
+Find **Reflow Auctions** in the list and enable it.
 
-3. **Save the change**
+#### 3. Save the change
 
-   Click **Save** in the top-right corner.
+Click **Save** in the top-right corner.
 
 :::warning
 
@@ -59,19 +59,20 @@ If the Reflow Auctions embed is turned off, auction widgets may not appear corre
 
 Once the app embed is enabled, you can place Reflow Auctions blocks on the storefront pages where customers should see auction content.
 
-1. **Choose the page template**
+#### 1. Choose the page template
 
-   In **Online Store > Themes > Customize**, switch to the page or template where you want auction content to appear.
+In **Online Store > Themes > Customize**, switch to the page or template where you want auction content to appear.
 
-2. **Add an app block**
+#### 2. Add an app block
 
-   In the left sidebar, add a block and select a block from **Reflow Auctions**.
+In the left sidebar, add a block and select a block from **Reflow Auctions**.
 
 3. **Move the block into position**Drag and drop the block to the section where it should appear. You can reorder blocks at any time.
 4. **Preview the layout**Use the Theme Editor preview to confirm the block appears in the right place and fits the rest of the page.
-5. **Publish your changes**
 
-   Click **Save** after you finish arranging the layout.
+#### 5. Publish your changes
+
+Click **Save** after you finish arranging the layout.
 
 ## Where to place theme blocks
 

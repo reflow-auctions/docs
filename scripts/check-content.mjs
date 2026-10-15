@@ -8,7 +8,9 @@ const MANTLE = /heymantle\.com|mantledocs\.com/i;
 const TEXT_EXT = /\.(md|mdx|js|mjs|cjs|json|ya?ml|css|html|txt|xml|svg)$/i;
 const SCAN = ['docs', 'releases', 'src', 'static', 'docusaurus.config.js', 'sidebars.js', '.pages.yml'];
 const YOUTUBE_LINE = /^\s*::youtube\b/;
-const YOUTUBE_OK = /^\s*::youtube(\[[^\]]*\])?\{\s*(#|id=")[A-Za-z0-9_-]{11}"?\s*\}\s*$/;
+// Editor-safe form only: ::youtube{#ID title="Title"} (title optional).
+const YOUTUBE_OK = /^::youtube\{\s*(#|id=")[A-Za-z0-9_-]{11}"?(\s+title="[^"]*")?\s*\}\s*$/;
+const YOUTUBE_HINT = '::youtube needs the form ::youtube{#VIDEO_ID title="Title"} with an 11-character video id';
 
 function walk(p) {
   if (!fs.existsSync(p)) return [];
@@ -24,7 +26,7 @@ export function findProblems(files) {
     if (/\.mdx?$/.test(file)) {
       content.split('\n').forEach((line, i) => {
         if (YOUTUBE_LINE.test(line) && !YOUTUBE_OK.test(line)) {
-          problems.push(`${file}:${i + 1}: ::youtube needs an 11-character video id, e.g. ::youtube[Title]{#S9Yjatw2Jdo}`);
+          problems.push(`${file}:${i + 1}: ${YOUTUBE_HINT}`);
         }
       });
     }

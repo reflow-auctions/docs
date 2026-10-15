@@ -7,7 +7,7 @@
     "serve": "docusaurus serve",
     "clear": "docusaurus clear",
     "check": "node scripts/check-content.mjs",
-    "test": "node --test \"scripts/**/*.test.mjs\" \"src/**/*.test.mjs\""
+    "test": "node --test --test-concurrency=1 \"scripts/**/*.test.mjs\" \"src/**/*.test.mjs\""
   },
   "dependencies": {
     "@docusaurus/core": "3.10.2",

@@ -14,17 +14,17 @@ Activity logs are read-only records designed to help you verify auction progress
 
 ## Where to find activity logs
 
-1. **Open the Reflow Auctions app**
+#### 1. Open the Reflow Auctions app
 
-   From your Shopify admin, open **Reflow Auctions**.
+From your Shopify admin, open **Reflow Auctions**.
 
-2. **Select the event or auction**
+#### 2. Select the event or auction
 
-   In the left navigation, open **Events** or **Auctions**, then choose the item you want to review.
+In the left navigation, open **Events** or **Auctions**, then choose the item you want to review.
 
-3. **Scroll to the Activity section**
+#### 3. Scroll to the Activity section
 
-   On the event or auction details page, scroll down to the **Activity** timeline to view the full log history.
+On the event or auction details page, scroll down to the **Activity** timeline to view the full log history.
 
 ![Auction details page showing the Activity section timeline beneath bid information and auction settings](/img/docs/managing-auctions/activity-logs-1.png)
 

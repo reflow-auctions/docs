@@ -83,45 +83,45 @@ If Buy It Now is unavailable, review the auction status and pricing first.
 
 ## Enable Buy It Now for a single auction
 
-1. **Open the auction**
+#### 1. Open the auction
 
-   Go to the **Auctions** section in the app and open the auction you want to update.
+Go to the **Auctions** section in the app and open the auction you want to update.
 
-2. **Find the Buy It Now setting**
+#### 2. Find the Buy It Now setting
 
-   On the **Auction Details** page, locate the **Buy It Now** option in the auction settings.
+On the **Auction Details** page, locate the **Buy It Now** option in the auction settings.
 
-3. **Turn the feature on**
+#### 3. Turn the feature on
 
-   Enable **Buy It Now** for the listing.
+Enable **Buy It Now** for the listing.
 
-4. **Set or confirm pricing**
+#### 4. Set or confirm pricing
 
-   Make sure the product price is already set and that it is higher than the starting bid amount.
+Make sure the product price is already set and that it is higher than the starting bid amount.
 
-5. **Save your changes**
+#### 5. Save your changes
 
-   Save the auction so the Buy It Now option becomes part of the live customer experience when the auction is available.
+Save the auction so the Buy It Now option becomes part of the live customer experience when the auction is available.
 
 ## Enable Buy It Now in bulk
 
 If you manage many auctions at once, you can update multiple listings from the Auctions table using bulk editing.
 
-1. **Open the Auctions table**
+#### 1. Open the Auctions table
 
-   In the app admin, go to the page that lists all auctions.
+In the app admin, go to the page that lists all auctions.
 
-2. **Select the auctions**
+#### 2. Select the auctions
 
-   Choose the auctions you want to update.
+Choose the auctions you want to update.
 
-3. **Use bulk editing**
+#### 3. Use bulk editing
 
-   Open the bulk edit option and choose the setting for **Buy It Now**.
+Open the bulk edit option and choose the setting for **Buy It Now**.
 
-4. **Apply the change**
+#### 4. Apply the change
 
-   Turn Buy It Now on for the selected auctions, then save the update.
+Turn Buy It Now on for the selected auctions, then save the update.
 
 ## Customer purchase flow
 

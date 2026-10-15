@@ -23,17 +23,17 @@ Canceling an auction takes effect immediately. Shoppers will see the auction as 
 
 ### Cancel an auction
 
-1. **Open the auction**
+#### 1. Open the auction
 
-   In the admin, go to the auction you want to stop and open its **Auction Details** page.
+In the admin, go to the auction you want to stop and open its **Auction Details** page.
 
-2. **Cancel the auction**
+#### 2. Cancel the auction
 
-   Cancel the auction from the details view. The auction is marked as **Canceled** immediately.
+Cancel the auction from the details view. The auction is marked as **Canceled** immediately.
 
-3. **Confirm the storefront result**
+#### 3. Confirm the storefront result
 
-   On the storefront, customers will see the auction as canceled and will no longer be able to bid or complete a purchase for that auction item.
+On the storefront, customers will see the auction as canceled and will no longer be able to bid or complete a purchase for that auction item.
 
 ![Storefront view of a canceled auction showing the auction status as Canceled](/img/docs/managing-auctions/canceling-auctions-2.png)
 
@@ -41,17 +41,17 @@ Canceling an auction takes effect immediately. Shoppers will see the auction as 
 
 If you want to make a canceled auction active again, you can re-publish it from the same auction record.
 
-1. **Open Auction Details**
+#### 1. Open Auction Details
 
-   In the admin, open the canceled auction's **Auction Details** page.
+In the admin, open the canceled auction's **Auction Details** page.
 
-2. **Click Keep Auction**
+#### 2. Click Keep Auction
 
-   Select **Keep auction** to re-publish the auction.
+Select **Keep auction** to re-publish the auction.
 
-3. **Auction goes live again**
+#### 3. Auction goes live again
 
-   The auction becomes available on the storefront right away.
+The auction becomes available on the storefront right away.
 
 :::note
 

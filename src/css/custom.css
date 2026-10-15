@@ -1,4 +1,10 @@
-/* Brand colors from the Mantle theme (--color-accent: #1A1A1A). */
+/*
+ * Reflow Auctions docs theme.
+ * Dark palette matches the old Mantle help center:
+ *   bg #171717, edges #2b2b2b, text #bfbfbf/#d9d9d9/#f2f2f2, labels #8c8c8c.
+ */
+
+/* ---------- Light mode ---------- */
 :root {
   --ifm-color-primary: #1a1a1a;
   --ifm-color-primary-dark: #171717;
@@ -7,14 +13,134 @@
   --ifm-color-primary-light: #333333;
   --ifm-color-primary-lighter: #404040;
   --ifm-color-primary-lightest: #4d4d4d;
+
+  --ifm-font-family-base: 'Segoe UI', system-ui, -apple-system, 'Helvetica Neue', Arial, sans-serif;
+  --ifm-heading-font-family: var(--ifm-font-family-base);
+
+  --reflow-sidebar-label: #737373;
+  --reflow-sidebar-link: #404040;
+  --reflow-sidebar-link-active: #000000;
+  --reflow-sidebar-indicator: #1a1a1a;
 }
 
+/* ---------- Dark mode (Mantle palette) ---------- */
 [data-theme='dark'] {
-  --ifm-color-primary: #e6e6e6;
-  --ifm-color-primary-dark: #cfcfcf;
-  --ifm-color-primary-darker: #c4c4c4;
-  --ifm-color-primary-darkest: #a1a1a1;
+  --ifm-color-primary: #f2f2f2;
+  --ifm-color-primary-dark: #d9d9d9;
+  --ifm-color-primary-darker: #cccccc;
+  --ifm-color-primary-darkest: #bfbfbf;
   --ifm-color-primary-light: #ffffff;
   --ifm-color-primary-lighter: #ffffff;
   --ifm-color-primary-lightest: #ffffff;
+
+  --ifm-background-color: #171717;
+  --ifm-background-surface-color: #171717;
+  --ifm-navbar-background-color: #171717;
+  --ifm-footer-background-color: #0f0f0f;
+  --ifm-color-emphasis-200: #2b2b2b;
+  --ifm-toc-border-color: #2b2b2b;
+  --ifm-hr-background-color: #2b2b2b;
+  --ifm-table-border-color: #2b2b2b;
+  --ifm-color-content: #bfbfbf;
+  --ifm-color-content-secondary: #a6a6a6;
+  --ifm-heading-color: #f2f2f2;
+  --ifm-link-color: #f2f2f2;
+  --ifm-menu-color-background-hover: #212121;
+  --ifm-menu-color-background-active: transparent;
+  --ifm-code-background: #212121;
+  --docsearch-modal-background: #0f0f0f;
+
+  --reflow-sidebar-label: #8c8c8c;
+  --reflow-sidebar-link: #d9d9d9;
+  --reflow-sidebar-link-active: #ffffff;
+  --reflow-sidebar-indicator: #ffffff;
+}
+
+[data-theme='dark'] .navbar {
+  box-shadow: none;
+  border-bottom: 1px solid #2b2b2b;
+}
+
+[data-theme='dark'] .theme-doc-sidebar-container {
+  border-right-color: #2b2b2b !important;
+}
+
+/* Links in body text: underline so they're recognisable in a mono palette. */
+.markdown a {
+  text-decoration: underline;
+  text-underline-offset: 0.18em;
+}
+
+/* ---------- Sidebar: Mantle-style flat sections ---------- */
+
+/* Section headers: small, uppercase, gray, not clickable-looking. */
+.theme-doc-sidebar-item-category-level-1 > .menu__list-item-collapsible {
+  pointer-events: none;
+  background: none !important;
+}
+
+.theme-doc-sidebar-item-category-level-1 > .menu__list-item-collapsible > .menu__link {
+  color: var(--reflow-sidebar-label);
+  font-size: 0.75rem;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  padding-bottom: 0.25rem;
+  cursor: default;
+}
+
+/* Hide the expand/collapse arrows (categories are never collapsible). */
+.theme-doc-sidebar-item-category-level-1 .menu__caret,
+.theme-doc-sidebar-item-category-level-1 > .menu__list-item-collapsible > .menu__link--sublist::after {
+  display: none;
+}
+
+/* Space between sections, like Mantle. */
+.theme-doc-sidebar-item-category-level-1 {
+  margin-top: 1.25rem;
+}
+
+.theme-doc-sidebar-menu > .theme-doc-sidebar-item-category-level-1:first-child {
+  margin-top: 0.25rem;
+}
+
+/* Page links: flush with the section header, no indent. */
+.theme-doc-sidebar-item-category-level-1 > .menu__list {
+  padding-left: 0;
+  margin-top: 0;
+}
+
+.theme-doc-sidebar-item-link-level-2 > .menu__link {
+  color: var(--reflow-sidebar-link);
+  font-size: 0.9375rem;
+  border-radius: 0;
+  position: relative;
+}
+
+.theme-doc-sidebar-item-link-level-2 > .menu__link:hover {
+  color: var(--reflow-sidebar-link-active);
+}
+
+/* Active page: bright text + white bar on the left edge (Mantle style). */
+.theme-doc-sidebar-item-link-level-2 > .menu__link--active {
+  color: var(--reflow-sidebar-link-active);
+  font-weight: 600;
+  background: none;
+}
+
+.theme-doc-sidebar-item-link-level-2 > .menu__link--active::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0.35rem;
+  bottom: 0.35rem;
+  width: 3px;
+  border-radius: 2px;
+  background: var(--reflow-sidebar-indicator);
+}
+
+/* Logo next to the site name. */
+.navbar__logo {
+  height: 1.75rem;
+  margin-right: 0.6rem;
 }

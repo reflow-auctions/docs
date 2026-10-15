@@ -44,21 +44,21 @@ If you already manage products in Shopify, Reflow Auctions lets you turn those p
 
 ## How Reflow Auctions works
 
-1. **Create an auction event**
+#### 1. Create an auction event
 
-   Add the products you want to sell and organize them into an event. This helps you manage timing, rules, and product visibility in one place.
+Add the products you want to sell and organize them into an event. This helps you manage timing, rules, and product visibility in one place.
 
-2. **Set your auction rules**
+#### 2. Set your auction rules
 
-   Choose the starting bid, minimum bid increase, and how long the auction should run. You can also enable options like Buy It Now, or automatic bidding depending on how you want customers to buy.
+Choose the starting bid, minimum bid increase, and how long the auction should run. You can also enable options like Buy It Now, or automatic bidding depending on how you want customers to buy.
 
-3. **Launch and monitor bidding**
+#### 3. Launch and monitor bidding
 
-   Once your event is live, customers can place bids, use instant purchase options where available, and interact with the auction according to the settings you enabled. You can watch bid activity and auction status in real time.
+Once your event is live, customers can place bids, use instant purchase options where available, and interact with the auction according to the settings you enabled. You can watch bid activity and auction status in real time.
 
-4. **Complete sales and process orders**
+#### 4. Complete sales and process orders
 
-   When an auction ends or a customer purchases instantly, Reflow Auctions can generate the related draft or completed order so you can move quickly into fulfillment.
+When an auction ends or a customer purchases instantly, Reflow Auctions can generate the related draft or completed order so you can move quickly into fulfillment.
 
 ## Key features
 

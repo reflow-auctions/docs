@@ -37,25 +37,25 @@ Relisting creates a new auction. It does not reopen or change the original ended
 
 You can relist several auctions at once from the event auction list. This is useful when you want to reuse multiple unsold or canceled items in a new event.
 
-1. **Open the event**
+#### 1. Open the event
 
-   Go to the event that contains the auctions you want to reuse.
+Go to the event that contains the auctions you want to reuse.
 
-2. **Select the auctions**
+#### 2. Select the auctions
 
-   In the auction list, select one or more auctions that have ended or been canceled.
+In the auction list, select one or more auctions that have ended or been canceled.
 
-3. **Open the bulk actions menu**
+#### 3. Open the bulk actions menu
 
-   Click the actions menu for the selected auctions, then choose **Relist auction**.
+Click the actions menu for the selected auctions, then choose **Relist auction**.
 
-4. **Review the new auction details**
+#### 4. Review the new auction details
 
-   Choose the destination event, then review the default start and end dates.
+Choose the destination event, then review the default start and end dates.
 
-5. **Save the relisted auctions**
+#### 5. Save the relisted auctions
 
-   Confirm the action to create new draft auctions.
+Confirm the action to create new draft auctions.
 
 ![Event auction list showing multiple auctions selected and the Relist auction option in the bulk actions menu](/img/docs/managing-auctions/relisting-auctions-1.png)
 
@@ -63,25 +63,25 @@ You can relist several auctions at once from the event auction list. This is use
 
 You can also relist an auction directly from its details page.
 
-1. **Open the auction**
+#### 1. Open the auction
 
-   Open the ended or canceled auction you want to relist.
+Open the ended or canceled auction you want to relist.
 
-2. **Open More actions**
+#### 2. Open More actions
 
-   Click **More actions** in the top-right corner of the auction page.
+Click **More actions** in the top-right corner of the auction page.
 
-3. **Choose Relist auction**
+#### 3. Choose Relist auction
 
-   Select **Relist auction** from the menu.
+Select **Relist auction** from the menu.
 
-4. **Set the event and dates**
+#### 4. Set the event and dates
 
-   In the relist window, select the destination event and review or update the start and end date fields.
+In the relist window, select the destination event and review or update the start and end date fields.
 
-5. **Create the draft auction**
+#### 5. Create the draft auction
 
-   Click **Relist auction** to create the new draft auction.
+Click **Relist auction** to create the new draft auction.
 
 ![Auction details page with the More actions menu open and Relist auction selected](/img/docs/managing-auctions/relisting-auctions-2.png)
 

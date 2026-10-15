@@ -6,6 +6,7 @@ import remarkYouTube from './src/remark/youtube.mjs';
 const config = {
   title: 'Reflow Auctions Help Center',
   tagline: 'Run auctions on your Shopify store',
+  favicon: 'img/brand/favicon.png',
   url: 'https://docs.reflowauctions.com',
   baseUrl: '/',
   trailingSlash: false,
@@ -34,6 +35,7 @@ const config = {
           sidebarPath: './sidebars.js',
           editUrl: 'https://github.com/reflow-auctions/docs/edit/main/',
           remarkPlugins: [remarkYouTube],
+          sidebarCollapsible: false,
         },
         blog: {
           path: 'releases',
@@ -83,9 +85,19 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
-      colorMode: { respectPrefersColorScheme: true },
+      colorMode: { defaultMode: 'dark', respectPrefersColorScheme: false },
+      image: 'img/brand/apple-touch-icon.png',
+      metadata: [{ name: 'theme-color', content: '#171717' }],
+      docs: { sidebar: { autoCollapseCategories: false } },
       navbar: {
         title: 'Reflow Auctions',
+        logo: {
+          alt: 'Reflow Auctions',
+          src: 'img/brand/logo.png',
+          srcDark: 'img/brand/logo-dark.png',
+          width: 28,
+          height: 28,
+        },
         items: [
           { type: 'docSidebar', sidebarId: 'docs', position: 'left', label: 'Docs' },
           { to: '/releases', label: 'Release Notes', position: 'left' },

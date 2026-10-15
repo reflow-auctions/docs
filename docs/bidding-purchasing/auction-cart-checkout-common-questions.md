@@ -145,25 +145,25 @@ For a step-by-step overview of the buyer experience, watch the [storefront walkt
 
 ## What customers usually do
 
-1. **Open My Auctions**
+#### 1. Open My Auctions
 
-   The customer signs in and opens **My Auctions**.
+The customer signs in and opens **My Auctions**.
 
-2. **Review Auction Cart**
+#### 2. Review Auction Cart
 
-   They open the **Auction Cart** and look through **Ready to pay** or **Ending soon**.
+They open the **Auction Cart** and look through **Ready to pay** or **Ending soon**.
 
-3. **Select an invoice**
+#### 3. Select an invoice
 
-   They select a payable item such as a **Buy It Now invoice** or **Auction invoice**.
+They select a payable item such as a **Buy It Now invoice** or **Auction invoice**.
 
-4. **Review totals**
+#### 4. Review totals
 
-   They check the item list and the summary lines for **Subtotal**, **Shipping**, **Fees**, **Taxes**, and **Total**.
+They check the item list and the summary lines for **Subtotal**, **Shipping**, **Fees**, **Taxes**, and **Total**.
 
-5. **Continue to Checkout**
+#### 5. Continue to Checkout
 
-   If the selection is payable, they click **Checkout** and finish payment in Shopify checkout.
+If the selection is payable, they click **Checkout** and finish payment in Shopify checkout.
 
 ## Best practices
 

@@ -30,21 +30,21 @@ After selecting multiple auctions, you can apply actions such as:
 
 ### Bulk edit auctions
 
-1. **Open the Auctions list**
+#### 1. Open the Auctions list
 
-   Go to the **Auctions** list from the Auctions page or from the event where the auctions are located.
+Go to the **Auctions** list from the Auctions page or from the event where the auctions are located.
 
-2. **Select the auctions you want to update**
+#### 2. Select the auctions you want to update
 
-   Use the checkboxes next to each auction. After you select one or more auctions, the bulk action toolbar appears above the list.
+Use the checkboxes next to each auction. After you select one or more auctions, the bulk action toolbar appears above the list.
 
-3. **Choose a bulk action**
+#### 3. Choose a bulk action
 
-   Select the action you want to apply, such as changing the auction status, updating prices, adjusting dates, or managing **Buy It Now**.
+Select the action you want to apply, such as changing the auction status, updating prices, adjusting dates, or managing **Buy It Now**.
 
-4. **Review the results**
+#### 4. Review the results
 
-   If all selected auctions meet the requirements for that change, the update is applied to the valid auctions.
+If all selected auctions meet the requirements for that change, the update is applied to the valid auctions.
 
 :::tip
 

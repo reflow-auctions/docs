@@ -28,33 +28,33 @@ Before you edit or review translations, make sure the store language you want to
 
 ### Set up storefront translations
 
-1. **Add the storefront language**
+#### 1. Add the storefront language
 
-   In Shopify Admin, go to **Settings → Languages**.
+In Shopify Admin, go to **Settings → Languages**.
 
-   Add **Spanish** or **Arabic**, depending on the language you want to configure.
+Add **Spanish** or **Arabic**, depending on the language you want to configure.
 
-   If prompted, assign the language to the appropriate storefront domain so it can be previewed correctly.
+If prompted, assign the language to the appropriate storefront domain so it can be previewed correctly.
 
-2. **Open Shopify’s translation tool**
+#### 2. Open Shopify’s translation tool
 
-   In Shopify Admin, go to **Apps → Translate & Adapt**.
+In Shopify Admin, go to **Apps → Translate & Adapt**.
 
-   This is where Shopify manages translated storefront content, including app-related storefront text.
+This is where Shopify manages translated storefront content, including app-related storefront text.
 
-3. **Translate the app content**
+#### 3. Translate the app content
 
-   Inside **Translate & Adapt**, find and select the app content for **Reflow Auctions** (or the relevant app content shown in your store).
+Inside **Translate & Adapt**, find and select the app content for **Reflow Auctions** (or the relevant app content shown in your store).
 
-   Review the available storefront text and add or update translations as needed.
+Review the available storefront text and add or update translations as needed.
 
-4. **Review the storefront**
+#### 4. Review the storefront
 
-   Open your storefront in the selected language and confirm the translated text appears correctly in:
+Open your storefront in the selected language and confirm the translated text appears correctly in:
 
-   - Auction widgets
-   - Related storefront messaging
-   - Other visible app content connected to the storefront experience
+- Auction widgets
+- Related storefront messaging
+- Other visible app content connected to the storefront experience
 
 :::tip
 

@@ -16,21 +16,21 @@ A separate draft order is created for each buyer. If buyer’s fees are enabled,
 
 Draft order creation begins only when the event is considered complete. The system waits until both the event timing and all active auctions are finished before generating any orders.
 
-1. **Wait for the event to complete**
+#### 1. Wait for the event to complete
 
-   The event must reach its **Estimated End Time**.
+The event must reach its **Estimated End Time**.
 
-2. **Confirm all auctions are finished**
+#### 2. Confirm all auctions are finished
 
-   Every active auction in the event must also be closed. If even one auction is still running, draft orders will not be generated yet.
+Every active auction in the event must also be closed. If even one auction is still running, draft orders will not be generated yet.
 
-3. **Group winning items by buyer**
+#### 3. Group winning items by buyer
 
-   Once the event is complete, the system groups all winning bids by buyer.
+Once the event is complete, the system groups all winning bids by buyer.
 
-4. **Create one draft order per buyer**
+#### 4. Create one draft order per buyer
 
-   Each buyer receives a separate draft order containing their won items and any applicable buyer’s fee.
+Each buyer receives a separate draft order containing their won items and any applicable buyer’s fee.
 
 ## What a draft order includes
 
@@ -101,21 +101,21 @@ This page is especially useful during live or multi-auction events because bidde
 
 You can add the **Items Summary** page to your storefront so bidders can view their current winning items and expected order grouping.
 
-1. **Open your storefront setup**
+#### 1. Open your storefront setup
 
-   Go to the area where you manage your storefront pages and navigation.
+Go to the area where you manage your storefront pages and navigation.
 
-2. **Add the Items Summary page**
+#### 2. Add the Items Summary page
 
-   Add the **Items Summary** page to your storefront experience.
+Add the **Items Summary** page to your storefront experience.
 
-3. **Publish your changes**
+#### 3. Publish your changes
 
-   Save and publish the storefront update so bidders can access the page.
+Save and publish the storefront update so bidders can access the page.
 
-4. **Review the bidder experience**
+#### 4. Review the bidder experience
 
-   Confirm that bidders can see their currently winning items grouped into draft orders during the event.
+Confirm that bidders can see their currently winning items grouped into draft orders during the event.
 
 :::note
 

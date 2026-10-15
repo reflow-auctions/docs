@@ -20,41 +20,41 @@ Reflow Auctions triggers appear in Shopify Flow under your app's trigger list. Y
 
 ### Create a workflow
 
-1. **Open Shopify Flow**
+#### 1. Open Shopify Flow
 
-   In your Shopify admin, open **Shopify Flow**.
+In your Shopify admin, open **Shopify Flow**.
 
-2. **Start a new workflow**
+#### 2. Start a new workflow
 
-   Click **Create workflow**, then click **Select a trigger**.
+Click **Create workflow**, then click **Select a trigger**.
 
-3. **Choose a Reflow Auctions trigger**
+#### 3. Choose a Reflow Auctions trigger
 
-   In the trigger list, find your app's trigger group and select the trigger you want to use, such as **Auction Starts** or **Event Ends**.
+In the trigger list, find your app's trigger group and select the trigger you want to use, such as **Auction Starts** or **Event Ends**.
 
-4. **Add an action**
+#### 4. Add an action
 
-   On the trigger card, click the **+** button and choose **Action**.
+On the trigger card, click the **+** button and choose **Action**.
 
-5. **Add a loop when working with multiple products**
+#### 5. Add a loop when working with multiple products
 
-   If the trigger includes more than one product, search for **For each** and select **For each (iterate)**.
+If the trigger includes more than one product, search for **For each** and select **For each (iterate)**.
 
-6. **Choose the list to loop through**
+#### 6. Choose the list to loop through
 
-   Click **Select variable** and choose **products → ids**. This runs the next action once for each product in the event.
+Click **Select variable** and choose **products → ids**. This runs the next action once for each product in the event.
 
-7. **Add the action inside the loop**
+#### 7. Add the action inside the loop
 
-   Inside the **For each (iterate)** block, click **Repeat for each item** and add the action you want to perform, such as **Add product tags**.
+Inside the **For each (iterate)** block, click **Repeat for each item** and add the action you want to perform, such as **Add product tags**.
 
-8. **Map the current product**
+#### 8. Map the current product
 
-   When the action asks for a product, insert the current item from the loop. In Flow, this appears as the variable for the current product ID, such as `{{idsForeachitem}}`.
+When the action asks for a product, insert the current item from the loop. In Flow, this appears as the variable for the current product ID, such as `{{idsForeachitem}}`.
 
-9. **Save and turn on the workflow**
+#### 9. Save and turn on the workflow
 
-   Click **Save**, then click **Turn on workflow** to enable it.
+Click **Save**, then click **Turn on workflow** to enable it.
 
 :::tip
 
@@ -66,25 +66,25 @@ If you want to update every product in an event, use a **For each** loop with **
 
 This example automatically adds a tag to products when an auction becomes active.
 
-1. **Choose the trigger**
+#### 1. Choose the trigger
 
-   Select **Auction Starts** as the workflow trigger.
+Select **Auction Starts** as the workflow trigger.
 
-2. **Add a product action**
+#### 2. Add a product action
 
-   Add the **Add product tags** action.
+Add the **Add product tags** action.
 
-3. **Select the product**
+#### 3. Select the product
 
-   Use the product ID provided by the trigger, or add a loop first if the trigger includes multiple products.
+Use the product ID provided by the trigger, or add a loop first if the trigger includes multiple products.
 
-4. **Enter the tag**
+#### 4. Enter the tag
 
-   In the tag field, enter the tag you want to apply, such as `auction-live`.
+In the tag field, enter the tag you want to apply, such as `auction-live`.
 
-5. **Save and enable**
+#### 5. Save and enable
 
-   Save the workflow and turn it on.
+Save the workflow and turn it on.
 
 ## Available triggers
 

@@ -14,17 +14,17 @@ The Notification Center is available from the bell icon in the Admin App header 
 
 ### Open the Notification Center
 
-1. **Find the bell icon**
+#### 1. Find the bell icon
 
-   Look for the bell icon in the top header of the Admin App.
+Look for the bell icon in the top header of the Admin App.
 
-2. **Check for new activity**
+#### 2. Check for new activity
 
-   If a new notification is waiting, a visual indicator appears on the bell icon.
+If a new notification is waiting, a visual indicator appears on the bell icon.
 
-3. **Review your notifications**
+#### 3. Review your notifications
 
-   Select the bell icon to open the Notification Center and read the latest updates.
+Select the bell icon to open the Notification Center and read the latest updates.
 
 :::note
 

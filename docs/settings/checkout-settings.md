@@ -36,9 +36,10 @@ Changes to this setting also apply to invoices that are already open.
 ### Set the invoice expiration time
 
 1. **Enter a value**Type the amount of time into the input field.
-2. **Choose the time unit**
 
-   Select **Days** or **Hours** from the dropdown.
+#### 2. Choose the time unit
+
+Select **Days** or **Hours** from the dropdown.
 
 3. **Save your changes**Save the setting so the new expiration time is used for invoices.
 

@@ -25,21 +25,21 @@ The auction table includes filters that help you locate auctions based on their 
 
 ![image](/img/docs/managing-auctions/auction-list-filters-2.png)
 
-1. **Open the Auctions list**
+#### 1. Open the Auctions list
 
-   Go to the **Auctions** page to view all available auctions in a table.
+Go to the **Auctions** page to view all available auctions in a table.
 
-2. **Filter by status**
+#### 2. Filter by status
 
-   Use the **Status** filter to show only auctions in a specific state, such as active, completed, or another available status in your workspace.
+Use the **Status** filter to show only auctions in a specific state, such as active, completed, or another available status in your workspace.
 
-3. **Filter by event**
+#### 3. Filter by event
 
-   Use the **Event** filter to limit the list to auctions connected to one event.
+Use the **Event** filter to limit the list to auctions connected to one event.
 
-4. **Review the filtered results**
+#### 4. Review the filtered results
 
-   The table updates so you can focus only on the auctions that match your selected filters.
+The table updates so you can focus only on the auctions that match your selected filters.
 
 :::tip
 
