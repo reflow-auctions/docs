@@ -1,7 +1,7 @@
 ---
 title: Welcome
-description: Learn how to use the Reflow Auctions Support center, including
-  Search or ask, Ask A.I., Menu navigation, and help article access.
+description: A quick overview of what Reflow Auctions does and how to find your
+  way around the app.
 ---
 Reflow Auctions helps you manage auctions, review activity, and keep work moving in one place. Use this page for a quick overview of what the app does and how to find your way around.
 
