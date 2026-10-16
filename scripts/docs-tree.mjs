@@ -23,5 +23,8 @@ export function readSidebarOrder(root = process.cwd()) {
   const file = path.join(root, 'sidebar.yml');
   if (!fs.existsSync(file)) return [];
   const data = yaml.load(fs.readFileSync(file, 'utf8'));
-  return Array.isArray(data) ? data : [];
+  // Pages CMS edits it as { sections: [...] } so sections can be collapsed;
+  // a bare top-level list is also accepted.
+  const list = Array.isArray(data) ? data : data?.sections;
+  return Array.isArray(list) ? list : [];
 }
