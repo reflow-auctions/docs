@@ -62,5 +62,5 @@ Before you finish, run all three: `npm test`, `npm run check`, `npm run build`. 
 ## Workflow
 
 - `main` deploys automatically. Make code changes on a branch and open a PR. CI builds every PR and only deploys `main`.
-- Pages CMS commits content edits straight to `main`.
+- Pages CMS commits content edits straight to `main`, but they **don't deploy** until an editor clicks **Publish site** (a Pages CMS action that runs `deploy.yml` via `workflow_dispatch`). `deploy.yml` recognises them by the commit message suffix `(via Pages CMS)` (set in `.pages.yml` → `settings.commit.templates`); keep that suffix if you change the templates. Every other push to `main` deploys.
 - Keep commits focused, with conventional prefixes (`feat:`, `fix:`, `style:`, `docs:`, `chore:`).

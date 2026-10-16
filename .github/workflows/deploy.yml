@@ -1,15 +1,24 @@
 name: Build and deploy
 
+# When does the live site update?
+# - Merged PRs / developer pushes to main: automatically.
+# - Pages CMS saves (commit message ends "(via Pages CMS)"): NOT automatically.
+#   They're checked (so mistakes show up right away) but wait for someone to
+#   click "Publish site" in Pages CMS, which runs this workflow by hand.
+# - Pull requests: checked, never published.
 on:
   push:
     branches: [main]
   pull_request:
   workflow_dispatch:
+    inputs:
+      payload:
+        description: Pages CMS action payload (JSON); unused, but Pages CMS always sends it
+        required: false
+        type: string
 
 permissions:
   contents: read
-  pages: write
-  id-token: write
 
 # One deploy at a time; never cancel a deploy that's already running.
 concurrency:
@@ -19,6 +28,8 @@ concurrency:
 jobs:
   build:
     runs-on: ubuntu-latest
+    outputs:
+      publish: ${{ steps.decide.outputs.publish }}
     steps:
       - uses: actions/checkout@v7
       - uses: actions/setup-node@v7
@@ -29,15 +40,41 @@ jobs:
       - run: npm test
       - run: npm run check
       - run: npm run build
+
+      - name: Decide whether to publish
+        id: decide
+        env:
+          EVENT: ${{ github.event_name }}
+          REF: ${{ github.ref }}
+          MESSAGE: ${{ github.event.head_commit.message }}
+        run: |
+          publish=false
+          if [ "$REF" = "refs/heads/main" ]; then
+            if [ "$EVENT" = "workflow_dispatch" ]; then
+              publish=true
+            elif [ "$EVENT" = "push" ]; then
+              first_line=$(printf '%s\n' "$MESSAGE" | head -n 1)
+              case "$first_line" in
+                *"(via Pages CMS)") echo "::notice::Pages CMS edit checked. Not published: click 'Publish site' in Pages CMS to make it live." ;;
+                *) publish=true ;;
+              esac
+            fi
+          fi
+          echo "publish=$publish" >> "$GITHUB_OUTPUT"
+          echo "Publish: $publish"
+
       - uses: actions/upload-pages-artifact@v5
-        if: github.event_name != 'pull_request' && github.ref == 'refs/heads/main'
+        if: steps.decide.outputs.publish == 'true'
         with:
           path: build
 
   deploy:
     needs: build
-    if: github.event_name != 'pull_request' && github.ref == 'refs/heads/main'
+    if: needs.build.outputs.publish == 'true'
     runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}

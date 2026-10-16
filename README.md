@@ -21,12 +21,14 @@ You don't need to be a developer to edit them. This page covers everything you n
 
 ## How publishing works
 
-1. You edit a page in **Pages CMS** and click **Save**.
-2. The save goes straight to GitHub. There's no separate "publish" button.
-3. GitHub checks the site and rebuilds it. **It's live about 2 minutes later.**
-4. If the check finds a problem (e.g. a broken link), the site **stays as it was** and nothing breaks. See [When a change doesn't show up](#when-a-change-doesnt-show-up).
+1. You edit a page in **Pages CMS** and click **Save**. The change is stored, but **not live yet**.
+2. GitHub checks every save right away (broken links, video lines, release names…). If something's wrong, you'll see it in the run within a couple of minutes. See [When a change doesn't show up](#when-a-change-doesnt-show-up).
+3. When you're ready, click **Publish site** in the Pages CMS sidebar and confirm. **Everything saved so far goes live about 2 minutes later.**
+4. If the check finds a problem when publishing, the site **stays as it was** and nothing breaks.
 
-Every save is recorded, so any change can be undone.
+You can save as many edits as you like and publish once. Every save is recorded, so any change can be undone.
+
+> Changes developers merge through GitHub pull requests publish automatically; only Pages CMS saves wait for the button.
 
 ## Editing in Pages CMS
 
@@ -34,6 +36,7 @@ Every save is recorded, so any change can be undone.
 2. Open **reflow-auctions / docs**.
 3. Pick **Docs** (help pages) or **Releases** (release notes) in the left menu.
 4. Open a page, make your change, click **Save**.
+5. When you're done with your edits, click **Publish site** in the left sidebar.
 
 ### Visual mode vs. Source mode
 
@@ -206,7 +209,7 @@ In **Source** mode, on its own line with an empty line above and below:
 
 Use `## Improvements (Admin app)` / `## Fixes (User side)` style headings only if a release needs that split.
 
-5. Save. It appears at **/releases** and in the RSS feed within ~2 minutes.
+5. Save, then **Publish site**. It appears at **/releases** and in the RSS feed ~2 minutes later.
 
 Write for merchants, not developers: say what changed for *them* and where to find it. Link to the help page when there is one.
 
@@ -227,7 +230,7 @@ In Pages CMS, open **Sidebar order** in the left menu. It's one page with a bloc
 - **Reorder sections:** drag a section block by its handle.
 - **Reorder pages within a section:** drag the pages inside that block.
 - **Rename a section heading:** edit **Section heading**.
-- Then **Save**. The sidebar updates ~2 minutes later.
+- Then **Save** and **Publish site**. The sidebar updates ~2 minutes later.
 
 Things to know:
 - Pages are listed by **file name** (e.g. `buyers-fee`), not title. Open the page in **Docs** if you're unsure which is which.
@@ -236,14 +239,15 @@ Things to know:
 
 ## When a change doesn't show up
 
-1. Wait 2–3 minutes and refresh. Your browser may be showing the old version, so try a private window.
-2. Still not there? Open **https://github.com/reflow-auctions/docs/actions**. The newest run shows ✅ or ❌.
-3. A ❌ means the site check found a problem, and the live site wasn't changed. Click the run, then the red step. The message names the file and the problem. Common ones:
+1. **Did you click Publish site?** Saving alone doesn't publish. Click it in the Pages CMS sidebar.
+2. Wait 2–3 minutes and refresh. Your browser may be showing the old version, so try a private window.
+3. Still not there? Open **https://github.com/reflow-auctions/docs/actions**. The newest run shows ✅ or ❌.
+4. A ❌ means the site check found a problem, and the live site wasn't changed. Click the run, then the red step. The message names the file and the problem. Common ones:
    - **Broken link:** a link points to a page that doesn't exist. Check the address.
    - **`::youtube needs the form …`:** the video line isn't right. See [Videos](#videos).
    - **`file name must be v1.54.0.md`:** the release file name doesn't match its version.
    - **`date must be YYYY-MM-DD`:** the release date is missing or in the wrong format.
-4. Fix it in Pages CMS and save again. If you're stuck, ask a developer and send them the link to the failed run.
+5. Fix it in Pages CMS, save, and publish again. If you're stuck, ask a developer and send them the link to the failed run.
 
 ---
 
