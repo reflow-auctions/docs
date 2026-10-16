@@ -1,6 +1,5 @@
 ---
 title: "Shopify Flow"
-sidebar_position: 1
 description: "Use Shopify Flow with Reflow Auctions to automate tasks when an event or auction starts, ends, or changes status. For example, you can tag products, notify y..."
 ---
 

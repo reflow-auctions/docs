@@ -1,6 +1,5 @@
 ---
 title: "Overview"
-sidebar_position: 2
 description: "Reflow Auctions helps you run timed auctions directly in your Shopify store. You can group products into auction events, set bidding rules, and manage everyt..."
 ---
 

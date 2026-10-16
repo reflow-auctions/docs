@@ -1,6 +1,5 @@
 ---
 title: Welcome
-sidebar_position: 1
 description: Learn how to use the Reflow Auctions Support center, including
   Search or ask, Ask A.I., Menu navigation, and help article access.
 ---

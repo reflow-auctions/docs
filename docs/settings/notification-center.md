@@ -1,6 +1,5 @@
 ---
 title: "Notification Center"
-sidebar_position: 3
 description: "The Notification Center brings important app updates into one place so admins can quickly review what needs attention without leaving the Admin App.The Notif..."
 ---
 

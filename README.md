@@ -13,6 +13,7 @@ You don't need to be a developer to edit them. This page covers everything you n
 - [Videos](#videos)
 - [Release notes](#release-notes)
 - [Adding a new page](#adding-a-new-page)
+- [Reordering the sidebar](#reordering-the-sidebar)
 - [When a change doesn't show up](#when-a-change-doesnt-show-up)
 - [For developers](#for-developers)
 
@@ -215,9 +216,23 @@ Write for merchants, not developers: say what changed for *them* and where to fi
 2. **Page title:** what shows at the top and in the sidebar.
 3. **File name:** Pages CMS suggests one from the title, e.g. `bulk-actions.md`. **This becomes the page's web address** (`/managing-auctions/bulk-actions`), so keep it short, lowercase, with dashes, and **don't rename it later**: old links would break.
 4. **Short description:** one sentence, shown in Google and search results.
-5. **Position in its sidebar section:** 1 = first.
+5. Save. The new page appears **at the end of its section** in the sidebar. To move it, see [Reordering the sidebar](#reordering-the-sidebar).
 
-To add a whole **new sidebar section**, ask a developer (it needs a new folder and a small settings file).
+To add a whole **new sidebar section**, ask a developer (it needs a new folder).
+
+## Reordering the sidebar
+
+In Pages CMS, open **Sidebar order** in the left menu. It's one page with a block for each sidebar section:
+
+- **Reorder sections:** drag a section block by its handle.
+- **Reorder pages within a section:** drag the pages inside that block.
+- **Rename a section heading:** edit **Section heading**.
+- Then **Save**. The sidebar updates ~2 minutes later.
+
+Things to know:
+- Pages are listed by **file name** (e.g. `buyers-fee`), not title. Open the page in **Docs** if you're unsure which is which.
+- **Don't change "Folder"**, and don't drag a page into a different section. A page's section is part of its web address, so moving it would break links. The site check will stop it and explain why.
+- A page that isn't in the list still shows up, at the end of its section. So nothing disappears if you forget it; drag it into place when convenient.
 
 ## When a change doesn't show up
 
@@ -246,7 +261,8 @@ npm run build     # production build; fails on broken links/anchors/images
 
 | Path | What |
 |---|---|
-| `docs/<section>/*.md` | Help pages; folder = sidebar section (`_category_.json` sets label/order) |
+| `docs/<section>/*.md` | Help pages; folder = sidebar section |
+| `sidebar.yml` | Sidebar order and section headings (drag-and-drop in Pages CMS); built by `scripts/sidebar.mjs` |
 | `releases/v*.md` | Release notes (blog plugin at `/releases`) |
 | `static/img/docs/` | Screenshots (Pages CMS uploads here) |
 | `src/components/YouTube/` | Click-to-load youtube-nocookie player |

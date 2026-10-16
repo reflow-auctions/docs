@@ -1,6 +1,5 @@
 ---
 title: "Checkout settings"
-sidebar_position: 1
 description: "Invoice expiration timeUse Invoice expiration time to control how long customers have to pay an invoice before it expires.  How it worksThis setting has two ..."
 ---
 

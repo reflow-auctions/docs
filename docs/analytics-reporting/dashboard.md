@@ -1,6 +1,5 @@
 ---
 title: "Dashboard"
-sidebar_position: 1
 description: "The Dashboard gives Admins a real-time summary of auction performance across all events. Use it to track revenue, bidder activity, sales volume, and event or..."
 ---
 

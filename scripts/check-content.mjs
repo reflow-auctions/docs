@@ -2,11 +2,13 @@
 // Usage: node scripts/check-content.mjs   (exits 1 on any problem)
 import fs from 'node:fs';
 import path from 'node:path';
+import { sidebarProblems } from './sidebar.mjs';
+import { readDocsTree, readSidebarOrder } from './docs-tree.mjs';
 
 const ROOT = process.cwd();
 const MANTLE = /heymantle\.com|mantledocs\.com/i;
 const TEXT_EXT = /\.(md|mdx|js|mjs|cjs|json|ya?ml|css|html|txt|xml|svg)$/i;
-const SCAN = ['docs', 'releases', 'src', 'static', 'docusaurus.config.js', 'sidebars.js', '.pages.yml'];
+const SCAN = ['docs', 'releases', 'src', 'static', 'docusaurus.config.js', 'sidebars.js', 'sidebar.yml', '.pages.yml'];
 const YOUTUBE_LINE = /^\s*::youtube\b/;
 // Editor-safe form only: ::youtube{#ID title="Title"} (title optional).
 const YOUTUBE_OK = /^::youtube\{\s*(#|id=")[A-Za-z0-9_-]{11}"?(\s+title="[^"]*")?\s*\}\s*$/;
@@ -82,7 +84,7 @@ if (import.meta.url === `file://${process.argv[1]}`) {
     file: path.relative(ROOT, abs).split(path.sep).join('/'),
     content: TEXT_EXT.test(abs) ? fs.readFileSync(abs, 'utf8') : '',
   }));
-  const problems = findProblems(files);
+  const problems = [...findProblems(files), ...sidebarProblems(readSidebarOrder(ROOT), readDocsTree(ROOT))];
   for (const p of problems) console.error(`✗ ${p}`);
   console.log(problems.length ? `${problems.length} problem(s)` : `✓ ${files.length} files OK`);
   process.exit(problems.length ? 1 : 0);

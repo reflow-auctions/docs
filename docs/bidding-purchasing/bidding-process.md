@@ -1,6 +1,5 @@
 ---
 title: "Bidding Process"
-sidebar_position: 1
 description: "The bidding process lets customers compete for listings in real time until the auction ends. As new bids are placed, the current price updates automatically,..."
 ---
 

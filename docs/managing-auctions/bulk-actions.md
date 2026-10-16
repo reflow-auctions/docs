@@ -1,6 +1,5 @@
 ---
 title: "Bulk Actions"
-sidebar_position: 3
 description: "Bulk editing lets you update multiple auctions at the same time from the Auctions list. You can use it from the main Auctions page or from an individual even..."
 ---
 

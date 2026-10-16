@@ -20,7 +20,8 @@ Before you finish, run all three: `npm test`, `npm run check`, `npm run build`. 
 
 | Path | What |
 |---|---|
-| `docs/<section>/<page>.md` | Help pages. Folder = sidebar section; `_category_.json` sets its label and order |
+| `docs/<section>/<page>.md` | Help pages. Folder = sidebar section |
+| `sidebar.yml` | ✓ Sidebar order + section headings, edited by drag-and-drop in Pages CMS. Built by `scripts/sidebar.mjs` (unlisted pages/sections are appended, never dropped) |
 | `releases/vX.Y.Z.md` | Release notes (blog plugin, served at `/releases`) |
 | `static/img/docs/<section>/` | Screenshots, referenced as `/img/docs/...` |
 | `src/components/YouTube/` | Click-to-load youtube-nocookie player |
@@ -48,7 +49,8 @@ Before you finish, run all three: `npm test`, `npm run check`, `npm run build`. 
 - **Never rename or move a doc file.** Its path is its public URL (`docs/settings/buyers-fee.md` → `/settings/buyers-fee`), and external links depend on it. If you must, add a redirect in `@docusaurus/plugin-client-redirects` in `docusaurus.config.js`.
 - **Images need real alt text** that describes the screenshot. Not "image" or "screenshot".
 - **Internal links** are site paths without the domain: `[Buyer's Fee](/settings/buyers-fee)`.
-- **Front matter** for docs: `title`, `description` (one sentence), `sidebar_position`. Keep `sidebar_label` if present.
+- **Front matter** for docs: `title`, `description` (one sentence). Don't add `sidebar_position`; order lives in `sidebar.yml`.
+- **New page or section:** add it to `sidebar.yml` too (`npm run check` warns if you don't). Keep `sidebar.yml` free of comments; Pages CMS rewrites the file on save.
 
 ## Code rules
 

@@ -1,6 +1,5 @@
 ---
 title: "Auction Cart & Checkout"
-sidebar_position: 3
 description: "Learn how Reflow Auctions handles Buy It Now items in cart, which Shopify settings to turn on, and how auction checkout behaves."
 ---
 

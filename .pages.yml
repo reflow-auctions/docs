@@ -19,7 +19,6 @@ content:
     type: collection
     path: docs
     subfolders: true
-    exclude: [_category_.json]
     # Name new pages after their title (e.g. "Bulk Actions" -> bulk-actions.md),
     # never a date prefix: the file name is the page's URL.
     filename:
@@ -37,9 +36,6 @@ content:
       - name: description
         label: Short description (shown in search results)
         type: text
-      - name: sidebar_position
-        label: Position in its sidebar section (1 = first)
-        type: number
       - name: body
         label: Page content
         type: rich-text
@@ -81,3 +77,26 @@ content:
         options:
           format: markdown
           switcher: true
+
+  # Drag sections and the pages inside them to reorder the sidebar.
+  # Pages can't move to another section here (the folder is part of the URL).
+  - name: sidebar
+    label: Sidebar order
+    type: file
+    path: sidebar.yml
+    format: yaml
+    list: true
+    fields:
+      - name: section
+        label: Folder (don't change)
+        type: string
+        required: true
+      - name: label
+        label: Section heading
+        type: string
+        required: true
+      - name: pages
+        label: Pages, in order (file name without .md)
+        type: string
+        list: true
+

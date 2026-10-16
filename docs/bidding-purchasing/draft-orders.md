@@ -1,6 +1,5 @@
 ---
 title: "Draft Orders"
-sidebar_position: 5
 description: "Draft orders are created automatically after an event is fully finished. They collect each bidder’s winning items into an order draft that you can use for th..."
 ---
 

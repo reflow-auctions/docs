@@ -1,6 +1,5 @@
 ---
 title: "Bidder Status"
-sidebar_position: 2
 description: "Use Bidder Status to control whether a customer can participate in your auctions. This setting applies across your storefront in real time, so a customer's a..."
 ---
 

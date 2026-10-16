@@ -1,6 +1,5 @@
 ---
 title: "Notifications for bidders"
-sidebar_position: 1
 description: "Notifications for biddersNotifications help bidders stay on top of important updates across auctions, invoices, and orders without having to check each item ..."
 ---
 

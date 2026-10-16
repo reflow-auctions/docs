@@ -1,6 +1,5 @@
 ---
 title: "Bids Table"
-sidebar_position: 3
 description: "The Bids Table gives admins a detailed, searchable view of bidding activity across all auctions. Use it to review who placed a bid, how much was submitted, w..."
 ---
 

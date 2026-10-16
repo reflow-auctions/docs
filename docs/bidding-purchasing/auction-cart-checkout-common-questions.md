@@ -1,6 +1,5 @@
 ---
 title: "Auction Cart & Checkout — Common Questions"
-sidebar_position: 4
 description: "Get quick answers about Auction Cart, Buy It Now invoices, checkout, fees, unavailable items, and what customers see in My Auctions."
 ---
 

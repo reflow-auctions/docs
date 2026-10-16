@@ -1,6 +1,5 @@
 ---
 title: "Bidder Profile"
-sidebar_position: 1
 description: "The Bidder Profile block appears on a customer’s details page in Shopify Admin. It gives your team a quick way to manage whether that customer can participat..."
 ---
 
