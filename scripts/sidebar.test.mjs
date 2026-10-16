@@ -1,6 +1,6 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
-import { buildSidebar, sidebarProblems } from './sidebar.mjs';
+import { buildSidebar, sidebarProblems, slugify } from './sidebar.mjs';
 
 // docs on disk: { section: [page slugs] }
 const DOCS = {
@@ -74,4 +74,31 @@ test('a complete, correct file has no problems', () => {
     { section: 'settings', label: 'Settings', pages: ['checkout-settings', 'buyers-fee'] },
   ];
   assert.deepEqual(sidebarProblems(order, DOCS), []);
+});
+
+test('slugify turns a section name into its folder name', () => {
+  assert.equal(slugify('Quick Start'), 'quick-start');
+  assert.equal(slugify('Bidding & Purchasing'), 'bidding-purchasing');
+  assert.equal(slugify('  Analytics   &  Reporting '), 'analytics-reporting');
+  assert.equal(slugify("Buyer's Fee"), 'buyers-fee');
+  assert.equal(slugify('Café Setup'), 'cafe-setup');
+  assert.equal(slugify('FAQ’s'), 'faqs');
+});
+
+test('section can be given by name only; the folder comes from the name', () => {
+  const order = [{ name: 'Settings', pages: ['buyers-fee'] }, { name: 'Quick Start', pages: [] }];
+  const items = buildSidebar(order, DOCS);
+  assert.deepEqual(items.map((c) => c.label), ['Settings', 'Quick Start']);
+  assert.deepEqual(items[0].items, ['settings/buyers-fee', 'settings/checkout-settings']);
+  assert.deepEqual(sidebarProblems([{ name: 'Quick Start', pages: ['welcome', 'overview', 'installation'] },
+    { name: 'Settings', pages: ['checkout-settings', 'buyers-fee'] }], DOCS), []);
+});
+
+test('a name whose folder does not exist explains the rename problem', () => {
+  const order = [{ name: 'Getting Started', pages: [] }, { name: 'Settings', pages: ['checkout-settings', 'buyers-fee'] }];
+  assert.deepEqual(sidebarProblems(order, DOCS), [
+    'sidebar.yml: no folder "docs/getting-started" for section "Getting Started". '
+      + 'Section names must match their folder (folders: quick-start, settings). Renaming a section changes its web addresses, so ask a developer',
+    'sidebar.yml: section "quick-start" is missing (it will show at the end)',
+  ]);
 });

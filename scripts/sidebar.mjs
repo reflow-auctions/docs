@@ -1,15 +1,34 @@
 // Sidebar order from sidebar.yml (edited with drag-and-drop in Pages CMS).
 //
 // sidebar.yml is a list of sections; each lists its pages in display order:
-//   - section: settings          # folder under docs/
-//     label: Settings            # heading shown in the sidebar
+//   - name: Settings             # heading shown in the sidebar
 //     pages:                     # page slugs (file names without .md)
 //       - checkout-settings
 //       - buyers-fee
+// The folder under docs/ is the name, slugified ("Bidding & Purchasing" ->
+// bidding-purchasing). The older form `section: <folder>` + `label: <heading>`
+// is still accepted.
 //
 // Safety: pages or sections missing from the file are appended at the end, so
 // a new page always shows up. Unknown or duplicate entries are skipped here and
 // reported by sidebarProblems() (run in `npm run check`).
+
+/** "Bidding & Purchasing" -> "bidding-purchasing" (lowercase, dashes, no accents/symbols). */
+export function slugify(name) {
+  return String(name ?? '')
+    .normalize('NFKD').replace(/[\u0300-\u036f]/g, '')
+    .toLowerCase()
+    .replace(/['’]/g, '')
+    .replace(/[^a-z0-9]+/g, '-')
+    .replace(/^-+|-+$/g, '');
+}
+
+/** Folder + heading for an entry: { name } or legacy { section, label }. */
+function sectionOf(entry) {
+  const name = String(entry?.name ?? entry?.label ?? '').trim();
+  const folder = String(entry?.section ?? '').trim() || slugify(name);
+  return { folder, heading: name || folder };
+}
 
 /** Normalize "page", "page.md", "section/page", "docs/section/page.md" to "page". */
 function pageSlug(value) {
@@ -33,7 +52,7 @@ export function buildSidebar(order, docs) {
   });
 
   for (const entry of order ?? []) {
-    const section = String(entry?.section ?? '').trim();
+    const { folder: section, heading } = sectionOf(entry);
     if (!docs[section] || seenSections.has(section)) continue;
     seenSections.add(section);
     const listed = [];
@@ -42,7 +61,7 @@ export function buildSidebar(order, docs) {
       if (docs[section].includes(slug) && !listed.includes(slug)) listed.push(slug);
     }
     const rest = docs[section].filter((p) => !listed.includes(p));
-    items.push(category(section, String(entry.label ?? '').trim() || section, [...listed, ...rest]));
+    items.push(category(section, heading, [...listed, ...rest]));
   }
 
   for (const section of Object.keys(docs)) {
@@ -60,9 +79,12 @@ export function sidebarProblems(order, docs) {
   for (const [section, pages] of Object.entries(docs)) for (const p of pages) owner[p] = section;
 
   for (const entry of order ?? []) {
-    const section = String(entry?.section ?? '').trim();
+    const { folder: section, heading } = sectionOf(entry);
     if (!docs[section]) {
-      problems.push(`sidebar.yml: unknown section "${section}" (folders: ${Object.keys(docs).join(', ')})`);
+      problems.push(entry?.section
+        ? `sidebar.yml: unknown section "${section}" (folders: ${Object.keys(docs).join(', ')})`
+        : `sidebar.yml: no folder "docs/${section}" for section "${heading}". Section names must match their folder `
+          + `(folders: ${Object.keys(docs).join(', ')}). Renaming a section changes its web addresses, so ask a developer`);
       continue;
     }
     if (seenSections.has(section)) {
