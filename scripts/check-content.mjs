@@ -11,6 +11,39 @@ const YOUTUBE_LINE = /^\s*::youtube\b/;
 // Editor-safe form only: ::youtube{#ID title="Title"} (title optional).
 const YOUTUBE_OK = /^::youtube\{\s*(#|id=")[A-Za-z0-9_-]{11}"?(\s+title="[^"]*")?\s*\}\s*$/;
 const YOUTUBE_HINT = '::youtube needs the form ::youtube{#VIDEO_ID title="Title"} with an 11-character video id';
+const LIST_HINT = 'put step content under a "#### N. Title" heading, not indented inside a numbered list (Pages CMS shifts it on every save)';
+
+/**
+ * Line numbers (1-based) of content that Pages CMS's rich-text editor
+ * re-indents on every save: inside a numbered-list item, an indented image,
+ * an indented ::: callout, or a second indented paragraph. A single
+ * continuation paragraph and nested bullets are stable and allowed.
+ */
+function driftingListLines(content) {
+  const hits = [];
+  let inFence = false;
+  let inItem = false;
+  let paras = 0;
+  let prevBlank = false;
+  content.split('\n').forEach((line, i) => {
+    if (/^\s*(```|~~~)/.test(line)) { inFence = !inFence; prevBlank = false; return; }
+    if (inFence) return;
+    if (/^\d+\.\s/.test(line)) { inItem = true; paras = 0; prevBlank = false; return; }
+    if (line.trim() === '') { prevBlank = true; return; }
+    if (!/^\s{2,}/.test(line)) { inItem = false; prevBlank = false; return; }
+    if (inItem) {
+      const text = line.trim();
+      if (/^!\[/.test(text) || /^:::/.test(text)) {
+        if (!/^:::\s*$/.test(text)) hits.push(i + 1);
+      } else if (prevBlank && !/^([-*+]|\d+\.)\s/.test(text)) {
+        paras += 1;
+        if (paras > 1) hits.push(i + 1);
+      }
+    }
+    prevBlank = false;
+  });
+  return hits;
+}
 
 function walk(p) {
   if (!fs.existsSync(p)) return [];
@@ -29,6 +62,7 @@ export function findProblems(files) {
           problems.push(`${file}:${i + 1}: ${YOUTUBE_HINT}`);
         }
       });
+      for (const n of driftingListLines(content)) problems.push(`${file}:${n}: ${LIST_HINT}`);
     }
     if (/^releases\/[^/]+\.md$/.test(file)) {
       const fm = /^---\n([\s\S]*?)\n---/.exec(content)?.[1] ?? '';
