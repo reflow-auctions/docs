@@ -111,8 +111,12 @@ content:
     format: yaml
     list: true
     fields:
-      - name: name
-        label: Section name (must match its folder, e.g. "Bidding & Purchasing" = bidding-purchasing)
+      - name: section
+        label: Folder (don't change)
+        type: string
+        required: true
+      - name: label
+        label: Section heading
         type: string
         required: true
       - name: pages
