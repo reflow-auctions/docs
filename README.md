@@ -221,10 +221,7 @@ Write for merchants, not developers: say what changed for *them* and where to fi
 4. **Short description:** one sentence, shown in Google and search results.
 5. Save. The new page appears **at the end of its section** in the sidebar. To move it, see [Reordering the sidebar](#reordering-the-sidebar).
 
-To add a whole **new sidebar section**:
-1. In **Docs**, click **Create folder** and name it after the section in lowercase with dashes: "Bidding & Purchasing" → `bidding-purchasing`.
-2. Create its first page inside that folder.
-3. In **Sidebar order**, add a section with **Section name** `Bidding & Purchasing` and drag it into place. The name and folder must match (the site check tells you if they don't).
+To add a whole **new sidebar section**, ask a developer (it needs a new folder).
 
 ## Reordering the sidebar
 
@@ -232,11 +229,12 @@ In Pages CMS, open **Sidebar order** in the left menu. It's one page with a bloc
 
 - **Reorder sections:** drag a section block by its handle.
 - **Reorder pages within a section:** drag the pages inside that block.
+- **Rename a section heading:** edit **Section heading**.
 - Then **Save** and **Publish site**. The sidebar updates ~2 minutes later.
 
 Things to know:
 - Pages are listed by **file name** (e.g. `buyers-fee`), not title. Open the page in **Docs** if you're unsure which is which.
-- **Section names match their folder:** "Bidding & Purchasing" is the folder `bidding-purchasing` (lowercase, symbols dropped, spaces become dashes). That's also part of each page's web address, so **don't rename a section or drag a page into a different one**: links would break. Changes to capitals or symbols are fine because they keep the same folder (e.g. "Bidding + Purchasing" still matches `bidding-purchasing`); changing the words isn't, so ask a developer. The site check catches mistakes and explains them.
+- **Don't change "Folder"**, and don't drag a page into a different section. A page's section is part of its web address, so moving it would break links. The site check will stop it and explain why.
 - A page that isn't in the list still shows up, at the end of its section. So nothing disappears if you forget it; drag it into place when convenient.
 
 ## When a change doesn't show up
@@ -268,7 +266,7 @@ npm run build     # production build; fails on broken links/anchors/images
 | Path | What |
 |---|---|
 | `docs/<section>/*.md` | Help pages; folder = sidebar section |
-| `sidebar.yml` | Sidebar order + section names (drag-and-drop in Pages CMS); folder = slugified name; built by `scripts/sidebar.mjs` |
+| `sidebar.yml` | Sidebar order and section headings (drag-and-drop in Pages CMS); built by `scripts/sidebar.mjs` |
 | `releases/v*.md` | Release notes (blog plugin at `/releases`) |
 | `static/img/docs/` | Screenshots (Pages CMS uploads here) |
 | `src/components/YouTube/` | Click-to-load youtube-nocookie player |
