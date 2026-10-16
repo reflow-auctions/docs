@@ -8,7 +8,31 @@ media:
   categories: [image]
   rename: safe
 
+# "Publish site" button (left sidebar). Saves don't go live by themselves;
+# click this to build and publish everything saved so far (~2 minutes).
+actions:
+  - name: publish-site
+    label: Publish site
+    workflow: deploy.yml
+    ref: main
+    cancelable: false
+    confirm:
+      title: Publish the site?
+      message: >-
+        This makes every saved change live on docs.reflowauctions.com in about
+        2 minutes. If the site check finds a problem, nothing is published and
+        the run shows what to fix.
+      button: Publish
+
 settings:
+  commit:
+    # The deploy workflow recognises Pages CMS saves by this suffix and waits
+    # for "Publish site" instead of publishing them. Keep "(via Pages CMS)".
+    templates:
+      create: "Create {path} (via Pages CMS)"
+      update: "Update {path} (via Pages CMS)"
+      delete: "Delete {path} (via Pages CMS)"
+      rename: "Rename {oldPath} to {newPath} (via Pages CMS)"
   content:
     # Keep front matter keys this form doesn't show (e.g. sidebar_label).
     merge: true
