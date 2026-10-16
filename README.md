@@ -225,16 +225,16 @@ To add a whole **new sidebar section**, ask a developer (it needs a new folder).
 
 ## Reordering the sidebar
 
-In Pages CMS, open **Sidebar order** in the left menu. It's one page with a block for each sidebar section:
+In Pages CMS, open **Sidebar order** in the left menu. It shows one collapsed row per sidebar section, in sidebar order:
 
-- **Reorder sections:** drag a section block by its handle.
-- **Reorder pages within a section:** drag the pages inside that block.
-- **Rename a section heading:** edit **Section heading**.
+- **Reorder sections:** drag a row by its handle.
+- **Reorder pages in a section:** click the row to open it, then drag its pages.
+- **Rename a section heading:** open the row and edit **Section heading**. The web addresses don't change.
 - Then **Save** and **Publish site**. The sidebar updates ~2 minutes later.
 
 Things to know:
 - Pages are listed by **file name** (e.g. `buyers-fee`), not title. Open the page in **Docs** if you're unsure which is which.
-- **Don't change "Folder"**, and don't drag a page into a different section. A page's section is part of its web address, so moving it would break links. The site check will stop it and explain why.
+- Don't drag a page into a different section. A page's section is part of its web address, so moving it would break links. The site check will stop it and explain why.
 - A page that isn't in the list still shows up, at the end of its section. So nothing disappears if you forget it; drag it into place when convenient.
 
 ## When a change doesn't show up

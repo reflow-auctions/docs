@@ -104,23 +104,32 @@ content:
 
   # Drag sections and the pages inside them to reorder the sidebar.
   # Pages can't move to another section here (the folder is part of the URL).
+  # Drag sections (and the pages inside each one) to reorder the sidebar.
+  # Each section starts collapsed and shows only its heading; click to open it.
+  # Pages can't move to another section here (the folder is part of the URL).
   - name: sidebar
     label: Sidebar order
     type: file
     path: sidebar.yml
     format: yaml
-    list: true
     fields:
-      - name: section
-        label: Folder (don't change)
-        type: string
-        required: true
-      - name: label
-        label: Section heading
-        type: string
-        required: true
-      - name: pages
-        label: Pages, in order (file name without .md)
-        type: string
-        list: true
-
+      - name: sections
+        label: Sections (drag to reorder)
+        type: object
+        list:
+          collapsible:
+            collapsed: true
+            summary: "{label}"
+        fields:
+          - name: label
+            label: Section heading
+            type: string
+            required: true
+          - name: section
+            label: Folder
+            type: string
+            hidden: true
+          - name: pages
+            label: Pages, in order (file name without .md)
+            type: string
+            list: true

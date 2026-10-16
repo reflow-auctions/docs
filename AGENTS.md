@@ -21,7 +21,7 @@ Before you finish, run all three: `npm test`, `npm run check`, `npm run build`. 
 | Path | What |
 |---|---|
 | `docs/<section>/<page>.md` | Help pages. Folder = sidebar section |
-| `sidebar.yml` | ✓ Sidebar order + section headings, edited by drag-and-drop in Pages CMS. Built by `scripts/sidebar.mjs` (unlisted pages/sections are appended, never dropped) |
+| `sidebar.yml` | ✓ Sidebar order + section headings, edited by drag-and-drop in Pages CMS. Shape: `sections: [{label, section, pages}]` (`section` = folder, hidden in Pages CMS). Built by `scripts/sidebar.mjs` (unlisted pages/sections are appended, never dropped). No `_category_.json` files. |
 | `releases/vX.Y.Z.md` | Release notes (blog plugin, served at `/releases`) |
 | `static/img/docs/<section>/` | Screenshots, referenced as `/img/docs/...` |
 | `src/components/YouTube/` | Click-to-load youtube-nocookie player |
