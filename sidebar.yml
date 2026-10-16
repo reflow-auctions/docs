@@ -68,3 +68,6 @@ sections:
     section: resources
     pages:
       - faqs
+  - label: Testing
+    pages:
+      - Hello World
