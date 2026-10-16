@@ -8,7 +8,7 @@ Embedded with the reusable `::youtube` component (click-to-load, youtube-nocooki
 To add a video anywhere, put this on its own line (in Pages CMS use **Source** mode):
 
 ```
-::youtube[Video title]{#VIDEO_ID}
+::youtube{#VIDEO_ID title="Video title"}
 ```
 
 `VIDEO_ID` is the 11 characters after `watch?v=` in the YouTube URL. The content check fails the build if it's wrong.
@@ -55,7 +55,7 @@ Several of these now have real pages on the new site (e.g. `/automation/shopify-
 |---|---|---|---|
 | `releases/v1.37.0.md` | 18 | Shows literal asterisks: `Added \*\*\*\*support \*\*\*\*for…` | `- Added support for the **Horizon theme**.` |
 | `releases/v1.37.0.md` | 25–27 | Split sentence: `**Resolved**` / `minor bugs and UI inconsistencies.` | One bullet under `## Fixes`: `- Resolved minor bugs and UI inconsistencies.` |
-| `docs/quick-start/welcome.md` | 4 | Description describes Mantle's UI ("Ask A.I.", "Search or ask") | Rewrite in one sentence about Reflow Auctions |
+| ~~`docs/quick-start/welcome.md`~~ | ~~4~~ | ~~Description describes Mantle's UI~~ | ✅ Done: rewritten without Mantle's "Ask A.I." |
 | 29 doc pages | 4 | `description:` is Mantle's cut-off version ending in `..."` | Optional; it's shown in search results. Rewrite the important ones |
 
 ## 6. Going live (after the PR is merged)

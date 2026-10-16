@@ -293,3 +293,82 @@
     overflow-y: auto;
   }
 }
+
+/* ---------- Footer (src/theme/Footer): compact, centered ---------- */
+.reflow-footer {
+  padding: 1.5rem 0 1.25rem;
+  font-size: 0.8125rem;
+  line-height: 1.5;
+  text-align: center;
+  color: var(--ifm-color-content-secondary);
+}
+
+[data-theme='dark'] .reflow-footer {
+  background: #0f0f0f;
+  border-top: 1px solid #2b2b2b;
+}
+
+/* Shopify badge: official asset, min 30px tall, clear space = half its height. */
+.reflow-footer__badge {
+  display: inline-block;
+  margin-bottom: 1rem;
+  line-height: 0;
+}
+
+.reflow-footer__badge img {
+  height: 40px;
+  width: auto;
+}
+
+.reflow-footer__links,
+.reflow-footer__bottom {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.25rem 0;
+}
+
+.reflow-footer__bottom {
+  margin-top: 0.35rem;
+}
+
+.reflow-footer__links > * + *::before,
+.reflow-footer__bottom > * + *::before {
+  content: '·';
+  margin: 0 0.6rem;
+  color: var(--ifm-color-content-secondary);
+}
+
+.reflow-footer__link {
+  color: var(--ifm-color-content);
+  text-decoration: none;
+}
+
+.reflow-footer__link:hover {
+  color: var(--ifm-heading-color);
+  text-decoration: underline;
+}
+
+/* Hide Docusaurus's external-link arrow in the compact footer. */
+.reflow-footer svg[class*='iconExternalLink'] {
+  display: none;
+}
+
+/* ---------- Releases sidebar: "View all releases" link ---------- */
+.reflow-view-all-releases {
+  display: inline-block;
+  margin-top: 1.25rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--ifm-color-content);
+  text-decoration: none;
+}
+
+.reflow-view-all-releases:hover {
+  color: var(--ifm-heading-color);
+  text-decoration: underline;
+}
+
+.menu__link.reflow-view-all-releases {
+  margin-top: 0.75rem;
+}

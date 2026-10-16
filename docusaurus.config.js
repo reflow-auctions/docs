@@ -73,6 +73,11 @@ const config = {
     ],
   ],
 
+  customFields: {
+    appStoreBadgeUrl: utm(APP_STORE, 'footer_badge'),
+    privacyUrl: utm(`${WEBSITE}/privacy`, 'footer'),
+  },
+
   plugins: [
     [
       '@docusaurus/plugin-client-redirects',
@@ -118,12 +123,12 @@ const config = {
           { href: utm(WEBSITE, 'navbar'), label: 'reflowauctions.com', position: 'right' },
         ],
       },
+      // Footer content; rendered by src/theme/Footer (badge + two compact lines).
       footer: {
         style: 'light',
         links: [
           { label: 'reflowauctions.com', href: utm(WEBSITE, 'footer') },
           { label: 'Shopify App Store', href: utm(APP_STORE, 'footer') },
-          { label: 'Privacy Policy', href: utm(`${WEBSITE}/privacy`, 'footer') },
           { label: 'Release notes RSS', href: 'pathname:///releases/rss.xml' },
         ],
         copyright: `© ${new Date().getFullYear()} Reflow Auctions`,
