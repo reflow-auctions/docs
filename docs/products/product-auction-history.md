@@ -1,6 +1,5 @@
 ---
 title: "Product Auction History"
-sidebar_position: 2
 description: "The Auction History block appears on a product’s details page in Shopify admin and gives you a quick snapshot of every auction connected to that product. Use..."
 ---
 

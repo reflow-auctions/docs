@@ -1,6 +1,5 @@
 ---
 title: "Auction Statuses"
-sidebar_position: 2
 description: "An auction’s status shows where it is in the bidding lifecycle, from setup to completion. These labels help admins quickly understand whether an auction is u..."
 ---
 

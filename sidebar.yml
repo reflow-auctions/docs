@@ -1,0 +1,69 @@
+- section: quick-start
+  label: Quick Start
+  pages:
+    - welcome
+    - overview
+    - installation
+- section: theme-setup
+  label: Theme Setup
+  pages:
+    - about-theme-blocks
+    - app-embed
+    - storefront-customization
+    - translation
+- section: products
+  label: Products
+  pages:
+    - creating-products
+    - product-auction-history
+- section: auction-setup
+  label: Auction Setup
+  pages:
+    - events
+    - auctions
+- section: managing-auctions
+  label: Managing Auctions
+  pages:
+    - auction-list-filters
+    - auction-statuses
+    - bulk-actions
+    - canceling-auctions
+    - relisting-auctions
+    - activity-logs
+- section: bidders
+  label: Bidders
+  pages:
+    - bidder-profile
+    - bidder-status
+- section: bidding-purchasing
+  label: Bidding & Purchasing
+  pages:
+    - bidding-process
+    - buy-it-now
+    - auction-cart-checkout
+    - auction-cart-checkout-common-questions
+    - draft-orders
+- section: storefront-features
+  label: Storefront Features
+  pages:
+    - storefront-notifications-for-bidders
+- section: analytics-reporting
+  label: Analytics & Reporting
+  pages:
+    - dashboard
+    - event-metrics
+    - bids-table
+- section: settings
+  label: Settings
+  pages:
+    - checkout-settings
+    - buyers-fee
+    - notification-center
+- section: automation
+  label: Automation
+  pages:
+    - shopify-flow
+- section: resources
+  label: Resources
+  pages:
+    - faqs

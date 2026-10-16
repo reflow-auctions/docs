@@ -1,6 +1,5 @@
 ---
 title: "About theme blocks"
-sidebar_position: 1
 description: "Set up Reflow Auctions theme blocks in Shopify: enable App embeds, add blocks in Theme Editor, and place auctions on the right pages."
 ---
 

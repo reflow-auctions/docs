@@ -1,6 +1,5 @@
 ---
 title: "Auction List & Filters"
-sidebar_position: 1
 description: "Use the Auctions list to review all auctions in one place, check their progress, and quickly narrow the list to the items you need. You can also monitor auct..."
 ---
 

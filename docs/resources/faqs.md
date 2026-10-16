@@ -1,6 +1,5 @@
 ---
 title: "FAQ's"
-sidebar_position: 1
 description: "Find answers to the most common questions about using the Reflow Auctions App in your Shopify store.This page covers the most common setup, bidding, checkout..."
 ---
 

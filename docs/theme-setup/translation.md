@@ -1,6 +1,5 @@
 ---
 title: "Translation"
-sidebar_position: 4
 description: "Use Shopify’s translation tools to show your storefront content in Spanish or Arabic, including text that appears in your auction widgets and related storefr..."
 ---
 

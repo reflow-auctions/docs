@@ -1,6 +1,5 @@
 ---
 title: "Canceling Auctions"
-sidebar_position: 4
 description: "You can cancel any Scheduled or Running auction at any time, even if bids have already been placed.Canceling an auction takes effect immediately. Shoppers wi..."
 ---
 

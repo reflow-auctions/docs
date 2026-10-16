@@ -1,6 +1,5 @@
 ---
 title: "Buy it Now"
-sidebar_position: 2
 description: "The Buy It Now feature lets you offer an auction item at a fixed price so customers can purchase it immediately instead of waiting for the auction to end. Th..."
 ---
 

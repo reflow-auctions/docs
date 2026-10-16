@@ -1,6 +1,5 @@
 ---
 title: "Activity Logs"
-sidebar_position: 6
 description: "Every important change in an event or auction is recorded in the Activity section so you can review what happened, when it happened, and who triggered it. Th..."
 ---
 

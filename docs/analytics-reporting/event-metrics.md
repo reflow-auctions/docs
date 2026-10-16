@@ -1,6 +1,5 @@
 ---
 title: "Event Metrics"
-sidebar_position: 2
 description: "The Event details page includes Event Analytics, which gives you a complete view of how a single Event is performing. It brings together headline metrics, re..."
 ---
 

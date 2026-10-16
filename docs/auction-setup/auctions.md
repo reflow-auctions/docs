@@ -1,6 +1,5 @@
 ---
 title: "Auctions"
-sidebar_position: 2
 description: "Create auctions by selecting products from your Shopify catalog and assigning them to an event. You can add products one by one or browse by collection, then..."
 ---
 

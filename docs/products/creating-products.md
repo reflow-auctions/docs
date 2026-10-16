@@ -1,6 +1,5 @@
 ---
 title: "Creating Products"
-sidebar_position: 1
 description: "Before a product can be added to an auction, it must exist in your Shopify catalog. You can create products one at a time in Shopify, or generate multiple pr..."
 ---
 

@@ -1,6 +1,5 @@
 ---
 title: "Installation"
-sidebar_position: 3
 description: "Install Reflow Auctions from the Shopify App Store to add auction functionality to your store. The installation only takes a few minutes and happens inside y..."
 ---
 
