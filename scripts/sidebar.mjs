@@ -99,3 +99,20 @@ export function sidebarProblems(order, docs) {
   }
   return problems;
 }
+
+/**
+ * Append fixed links (non-doc pages, e.g. the release notes blog) to the end
+ * of sidebar sections. `links` maps a section folder to [{label, href}].
+ * Sections not present in `items` are ignored. Pure: returns a new array.
+ */
+export function addLinks(items, links) {
+  return items.map((category) => {
+    const section = String(category.items[0] ?? '').split('/')[0];
+    const extra = links[section];
+    if (!extra?.length) return category;
+    return {
+      ...category,
+      items: [...category.items, ...extra.map(({ label, href }) => ({ type: 'link', label, href }))],
+    };
+  });
+}
