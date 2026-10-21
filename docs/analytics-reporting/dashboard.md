@@ -1,6 +1,6 @@
 ---
 title: "Dashboard"
-description: "The Dashboard gives Admins a real-time summary of auction performance across all events. Use it to track revenue, bidder activity, sales volume, and event or..."
+description: "Track auction revenue, bidder activity, sales volume, and event status in real time from the Reflow Auctions Dashboard, with date filters."
 ---
 
 The **Dashboard** gives Admins a real-time summary of auction performance across all events. Use it to track revenue, bidder activity, sales volume, and event or auction status from one place. The date filter and comparison tools make it easy to review performance for a single day or a custom date range, then measure results against a previous period.

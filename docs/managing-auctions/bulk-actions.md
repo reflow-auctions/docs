@@ -1,6 +1,6 @@
 ---
 title: "Bulk Actions"
-description: "Bulk editing lets you update multiple auctions at the same time from the Auctions list. You can use it from the main Auctions page or from an individual even..."
+description: "Update many auctions at once from the Auctions list or an event's auction list, applying the same change to multiple items in one step."
 ---
 
 Bulk editing lets you update multiple auctions at the same time from the **Auctions** list. You can use it from the main Auctions page or from an individual event’s auction list to make the same change across many items at once.

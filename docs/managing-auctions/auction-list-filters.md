@@ -1,6 +1,6 @@
 ---
 title: "Auction List & Filters"
-description: "Use the Auctions list to review all auctions in one place, check their progress, and quickly narrow the list to the items you need. You can also monitor auct..."
+description: "Review all your auctions in one list, track their progress, and use filters to quickly find the auctions you need."
 ---
 
 Use the **Auctions** list to review all auctions in one place, check their progress, and quickly narrow the list to the items you need. You can also monitor auction status and results from the related **Event** view.

@@ -1,6 +1,6 @@
 ---
 title: "Activity Logs"
-description: "Every important change in an event or auction is recorded in the Activity section so you can review what happened, when it happened, and who triggered it. Th..."
+description: "Review every important change to an event or auction, including what happened, when, and who triggered it, in the Activity section."
 ---
 
 Every important change in an event or auction is recorded in the **Activity** section so you can review what happened, when it happened, and who triggered it. This gives your team a clear history of updates, bidder activity, and system actions.

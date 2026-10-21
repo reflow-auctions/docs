@@ -1,6 +1,6 @@
 ---
 title: "Events"
-description: "Before bidding can begin, an admin must create an event in the Admin app. When you create an event, you set the event title and an estimated end date and tim..."
+description: "Create an auction event in the Admin app with a title and an estimated end date and time. Events group your auctions before bidding begins."
 ---
 
 Before bidding can begin, an admin must create an event in the Admin app. When you create an event, you set the event title and an estimated end date and time.

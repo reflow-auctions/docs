@@ -1,6 +1,6 @@
 ---
 title: "Bidder Status"
-description: "Use Bidder Status to control whether a customer can participate in your auctions. This setting applies across your storefront in real time, so a customer's a..."
+description: "Control whether a customer can bid in your auctions. Bidder Status changes apply across your storefront in real time."
 ---
 
 Use **Bidder Status** to control whether a customer can participate in your auctions. This setting applies across your storefront in real time, so a customer's access updates immediately after their status changes.

@@ -1,6 +1,6 @@
 ---
 title: "Installation"
-description: "Install Reflow Auctions from the Shopify App Store to add auction functionality to your store. The installation only takes a few minutes and happens inside y..."
+description: "Install Reflow Auctions from the Shopify App Store and complete setup in your Shopify admin. Installation only takes a few minutes."
 ---
 
 Install **Reflow Auctions** from the Shopify App Store to add auction functionality to your store. The installation only takes a few minutes and happens inside your Shopify admin.

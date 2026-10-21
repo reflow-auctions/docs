@@ -1,6 +1,6 @@
 ---
 title: "Bids Table"
-description: "The Bids Table gives admins a detailed, searchable view of bidding activity across all auctions. Use it to review who placed a bid, how much was submitted, w..."
+description: "Search and review every bid across your auctions in the Bids Table, including who bid, how much, what kind of bid, and when."
 ---
 
 The **Bids Table** gives admins a detailed, searchable view of bidding activity across all auctions. Use it to review who placed a bid, how much was submitted, what kind of bid it was, and when it happened.

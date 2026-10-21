@@ -1,6 +1,6 @@
 ---
 title: "Translation"
-description: "Use Shopify’s translation tools to show your storefront content in Spanish or Arabic, including text that appears in your auction widgets and related storefr..."
+description: "Use Shopify's translation tools to show your storefront and auction widget text in Spanish or Arabic for international bidders."
 ---
 
 Use Shopify’s translation tools to show your storefront content in Spanish or Arabic, including text that appears in your auction widgets and related storefront components.

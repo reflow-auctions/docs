@@ -1,6 +1,6 @@
 ---
 title: "Bidding Process"
-description: "The bidding process lets customers compete for listings in real time until the auction ends. As new bids are placed, the current price updates automatically,..."
+description: "Learn how bidding works in Reflow Auctions, including real-time price updates and popcorn bidding that extends auctions with late bids."
 ---
 
 The bidding process lets customers compete for listings in real time until the auction ends. As new bids are placed, the current price updates automatically, and dynamic closing rules such as popcorn bidding can extend the auction when bidding activity happens near the end.

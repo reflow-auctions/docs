@@ -139,10 +139,6 @@ Reorder the blocks in the left sidebar and preview the page again. Theme support
 
   Install Reflow Auctions and complete the initial Shopify setup.
 
-- **Creating Auctions**
+- **[Creating Auctions](/auction-setup/auctions)**
 
   Create auction listings before adding them to your storefront.
-
-- **Settings**
-
-  Review app-level settings that affect how Reflow Auctions works in your store.

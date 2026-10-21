@@ -1,6 +1,6 @@
 ---
 title: "Shopify Flow"
-description: "Use Shopify Flow with Reflow Auctions to automate tasks when an event or auction starts, ends, or changes status. For example, you can tag products, notify y..."
+description: "Automate tasks with Shopify Flow when an event or auction starts, ends, or changes status, like tagging products or notifying your team."
 ---
 
 Use Shopify Flow with Reflow Auctions to automate tasks when an event or auction starts, ends, or changes status. For example, you can tag products, notify your team, update collections, or trigger follow-up actions automatically.

@@ -1,6 +1,6 @@
 ---
 title: "FAQ's"
-description: "Find answers to the most common questions about using the Reflow Auctions App in your Shopify store.This page covers the most common setup, bidding, checkout..."
+description: "Find answers to common questions about setting up Reflow Auctions, bidding, checkout, and payments in your Shopify store."
 ---
 
 Find answers to the most common questions about using the Reflow Auctions App in your Shopify store.

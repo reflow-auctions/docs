@@ -1,6 +1,6 @@
 ---
 title: "Notifications for bidders"
-description: "Notifications for biddersNotifications help bidders stay on top of important updates across auctions, invoices, and orders without having to check each item ..."
+description: "Bidders get notifications about their auctions, invoices, and orders, and can review them and jump to each item from the My Auctions page."
 ---
 
 ## Notifications for bidders

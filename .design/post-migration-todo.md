@@ -1,69 +1,19 @@
-# Post-migration to-do (owner)
+# Docs to-do
 
-Things the migration left for a human. Each one is safe to do in Pages CMS (Source mode) or by editing the file directly.
+What's left after the move from Mantle. Content changes can be done in Pages CMS: edit, **Save**, then **Publish site**.
 
-## 1. Video links ✅ done
+## Content
 
-Embedded with the reusable `::youtube` component (click-to-load, youtube-nocookie, `rel=0`).
-To add a video anywhere, put this on its own line (in Pages CMS use **Source** mode):
+- [ ] **Notion links** in [v1.41.0](https://docs.reflowauctions.com/releases/v1.41.0) (lines 8, 9, 13, 14) and [v1.42.0](https://docs.reflowauctions.com/releases/v1.42.0) (lines 8, 10, 11): decide where each should point, or remove it. Three go to the wrong Notion page (Draft Orders, Statistics & Insights, FAQ & Troubleshooting), as they did on Mantle.
 
-```
-::youtube{#VIDEO_ID title="Video title"}
-```
+## Housekeeping
 
-`VIDEO_ID` is the 11 characters after `watch?v=` in the YouTube URL. The content check fails the build if it's wrong.
+- [ ] **Security warnings**: 12 known issues in packages used only while building the site (no risk to visitors). Update `js-yaml` and pin patched versions of the rest; some may remain until Docusaurus updates.
 
-## 2. Dead "related page" cards (already 404 on Mantle; now plain text)
+## Quick checks on a phone
 
-| Page | Card | Old Mantle link | Suggested fix |
-|---|---|---|---|
-| `docs/theme-setup/about-theme-blocks.md` (line 142) | Creating Auctions | `/quick-start/creating-auctions` | link to `/auction-setup/auctions` |
-| `docs/theme-setup/about-theme-blocks.md` (line 146) | Settings | `/configuration/settings` | link to `/settings/checkout-settings` |
-| `docs/bidding-purchasing/buy-it-now.md` (line 179) | Make Offer | `/make-offer` | delete the card (no Make Offer page exists) |
-| `docs/bidding-purchasing/buy-it-now.md` (line 187) | Checkout Rules | `/checkout-rules` | link to `/settings/checkout-settings` |
+- [ ] The ☰ menu layout looks right
 
-Link format inside a card: `- **[Creating Auctions](/auction-setup/auctions)**`
+## Done
 
-## 3. Release dates
-
-| File | Current | Likely correct |
-|---|---|---|
-| `releases/v1.15.0.md` | `2024-01-13` | `2025-01-13` |
-| `releases/v1.16.0.md` | `2024-01-27` | `2025-01-27` |
-
-Keep the `YYYY-MM-DD` format, or the content check fails the build.
-
-## 4. Notion links (kept as-is; check they're public)
-
-Open each one in a private browser window. If it asks you to log in, customers will hit that too. ⚠️ = the Notion page title doesn't match the release note (this was already wrong on Mantle).
-
-| File | Line | Release note | Link text | Notion page |
-|---|---|---|---|---|
-| `releases/v1.42.0.md` | 8 | Simplified Onboarding guide for Merchants | Setup guide | Online Store App Blocks in Themes Editor |
-| `releases/v1.42.0.md` | 10 | Items Summary Page for the Storefront | Learn more | Draft Orders ⚠️ |
-| `releases/v1.42.0.md` | 11 | Bidder Profile UI extension | Learn more | Statistics & Insights ⚠️ |
-| `releases/v1.41.0.md` | 8 | Shopify Flow integration | Setup guide | Shopify Flow Support |
-| `releases/v1.41.0.md` | 9 | Event Export (CSV) | Learn more | Statistics & Insights |
-| `releases/v1.41.0.md` | 13 | Buyer’s Fee / Fixed Fee unification | Learn more | Settings & Configuration |
-| `releases/v1.41.0.md` | 14 | Refined auction filtering on Catalog | Setup guide | FAQ & Troubleshooting ⚠️ |
-
-Several of these now have real pages on the new site (e.g. `/automation/shopify-flow`, `/settings/buyers-fee`). Swapping the links over is optional.
-
-## 5. Text cleanups
-
-| File | Line | Problem | Fix |
-|---|---|---|---|
-| `releases/v1.37.0.md` | 18 | Shows literal asterisks: `Added \*\*\*\*support \*\*\*\*for…` | `- Added support for the **Horizon theme**.` |
-| `releases/v1.37.0.md` | 25–27 | Split sentence: `**Resolved**` / `minor bugs and UI inconsistencies.` | One bullet under `## Fixes`: `- Resolved minor bugs and UI inconsistencies.` |
-| ~~`docs/quick-start/welcome.md`~~ | ~~4~~ | ~~Description describes Mantle's UI~~ | ✅ Done: rewritten without Mantle's "Ask A.I." |
-| 29 doc pages | 4 | `description:` is Mantle's cut-off version ending in `..."` | Optional; it's shown in search results. Rewrite the important ones |
-
-## 6. Going live (after the PR is merged)
-
-- [ ] DNS: `CNAME docs → reflow-auctions.github.io`
-- [ ] Repo Settings → Pages: Source = GitHub Actions; Custom domain = `docs.reflowauctions.com`; then tick Enforce HTTPS once offered
-- [ ] Install Pages CMS on the `docs` repo; give editors access
-- [ ] Test-edit one page with a callout box in Pages CMS and check it still looks right
-- [ ] Ask Mantle to redirect `reflow.mantledocs.com/*` → `docs.reflowauctions.com/*`
-- [ ] Update help links in the Shopify listing, the app, and emails
-- [ ] Cancel Mantle
+Site live at docs.reflowauctions.com · custom domain, HTTPS, org domain verified · Pages CMS with Publish button · drag-and-drop sidebar · videos embedded · README and AGENTS.md · release dates fixed · dead related-page cards fixed · v1.37.0 typos fixed · page descriptions rewritten · search spinner fixed · Sidebar order drag-and-drop confirmed.

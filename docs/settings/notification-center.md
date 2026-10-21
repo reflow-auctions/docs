@@ -1,6 +1,6 @@
 ---
 title: "Notification Center"
-description: "The Notification Center brings important app updates into one place so admins can quickly review what needs attention without leaving the Admin App.The Notif..."
+description: "Review important Reflow Auctions app updates in one place with the Notification Center, without leaving the Admin app."
 ---
 
 The **Notification Center** brings important app updates into one place so admins can quickly review what needs attention without leaving the Admin App.

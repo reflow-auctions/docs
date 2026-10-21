@@ -1,6 +1,6 @@
 ---
 title: "Auctions"
-description: "Create auctions by selecting products from your Shopify catalog and assigning them to an event. You can add products one by one or browse by collection, then..."
+description: "Create auctions from your Shopify products or collections and apply shared settings like start time, end time, starting bid, and bid increment."
 ---
 
 Create auctions by selecting products from your Shopify catalog and assigning them to an event. You can add products one by one or browse by collection, then apply shared auction settings like start time, end time, starting bid, and bid increment to all selected items at once.
