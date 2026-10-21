@@ -2,6 +2,8 @@
 
 Instructions for AI coding agents working in this repo. Humans: see [README.md](README.md).
 
+> **Get the owner's approval before you commit, push, open a PR, or merge.** See [Approval](#approval) below.
+
 This is the Reflow Auctions help center: a Docusaurus 3 site deployed to GitHub Pages at https://docs.reflowauctions.com. Non-developers edit content through Pages CMS (`.pages.yml`), whose rich-text editor rewrites Markdown on every save. **Most rules below exist so content survives that editor unchanged.** `npm run check` enforces the ones marked ✓.
 
 ## Commands
@@ -59,8 +61,25 @@ Before you finish, run all three: `npm test`, `npm run check`, `npm run build`. 
 - Don't add dependencies for things CSS or a few lines of code can do.
 - Content guard rules belong in `scripts/check-content.mjs`'s pure `findProblems()`, with a test in `scripts/check-content.test.mjs`.
 
+## Approval
+
+You may read, edit files locally, and run `npm test` / `npm run check` / `npm run build` without asking. **Before any of the following, stop and get explicit approval from the repo owner:**
+
+- `git commit`
+- `git push` (any branch)
+- opening, updating, closing, or merging a pull request
+- anything that changes GitHub settings, triggers a workflow run, or publishes the live site
+
+When asking, show:
+1. **What changed:** files touched and a short summary (a diff for anything non-trivial).
+2. **Why:** the problem it solves.
+3. **Checks run:** test / check / build results.
+4. **What happens next:** e.g. "merging this PR publishes the site."
+
+Wait for a clear "yes" for that specific step. Approval for one step doesn't cover the next: approval to commit is not approval to push or open a PR. If the owner asks to undo something, undo exactly that and ask again before doing anything further.
+
 ## Workflow
 
-- `main` deploys automatically. Make code changes on a branch and open a PR. CI builds every PR and only deploys `main`.
+- `main` deploys automatically. Make code changes on a branch and open a PR (after approval). CI builds every PR and only deploys `main`.
 - Pages CMS commits content edits straight to `main`, but they **don't deploy** until an editor clicks **Publish site** (a Pages CMS action that runs `deploy.yml` via `workflow_dispatch`). `deploy.yml` recognises them by the commit message suffix `(via Pages CMS)` (set in `.pages.yml` → `settings.commit.templates`); keep that suffix if you change the templates. Every other push to `main` deploys.
 - Keep commits focused, with conventional prefixes (`feat:`, `fix:`, `style:`, `docs:`, `chore:`).
