@@ -265,7 +265,10 @@
     z-index: calc(var(--ifm-z-index-fixed) + 1);
   }
 
-  .navbar__search[class*='focused'] [class*='searchBar'],
+  /* Only the wrapper span (class searchBar_*) and the input. A broad
+     [class*='searchBar'] also matched the spinner (searchBarLoadingRing_*)
+     and forced it visible. */
+  .navbar__search[class*='focused'] > [class^='searchBar_'],
   .navbar__search[class*='focused'] .navbar__search-input {
     display: block;
     width: 100% !important;
@@ -282,7 +285,7 @@
     overflow: hidden;
   }
 
-  .navbar [class*='searchBar'] [class*='dropdownMenu'] {
+  .navbar [class^='searchBar_'] [class*='dropdownMenu'] {
     position: fixed !important;
     top: calc(var(--ifm-navbar-height) + 0.25rem) !important;
     left: var(--ifm-navbar-padding-horizontal) !important;
@@ -292,6 +295,26 @@
     max-height: calc(100dvh - var(--ifm-navbar-height) - 1rem);
     overflow-y: auto;
   }
+}
+
+/* Search spinner: only while the search index is loading, and in place of
+   the magnifying glass (not stacked under it). */
+.navbar__search [class*='searchBarLoadingRing'] {
+  display: none !important;
+}
+
+.navbar__search[class*='searchIndexLoading'] [class*='searchBarLoadingRing'] {
+  display: inline-block !important;
+  width: 1rem;
+  height: 1rem;
+  top: 50%;
+  left: 0.75rem;
+  transform: translateY(-50%);
+  z-index: 2;
+}
+
+.navbar__search[class*='searchIndexLoading'] [class*='searchIcon'] {
+  visibility: hidden;
 }
 
 /* ---------- Footer (src/theme/Footer): compact, centered ---------- */
