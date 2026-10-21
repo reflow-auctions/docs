@@ -1,6 +1,6 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
-import { buildSidebar, sidebarProblems } from './sidebar.mjs';
+import { buildSidebar, sidebarProblems, addLinks } from './sidebar.mjs';
 
 // docs on disk: { section: [page slugs] }
 const DOCS = {
@@ -74,4 +74,19 @@ test('a complete, correct file has no problems', () => {
     { section: 'settings', label: 'Settings', pages: ['checkout-settings', 'buyers-fee'] },
   ];
   assert.deepEqual(sidebarProblems(order, DOCS), []);
+});
+
+test('addLinks appends a link to the end of the named section only', () => {
+  const items = buildSidebar([{ section: 'settings', label: 'Settings', pages: [] },
+    { section: 'quick-start', label: 'Quick Start', pages: [] }], DOCS);
+  const out = addLinks(items, { settings: [{ label: 'Release Notes', href: '/releases' }] });
+  assert.deepEqual(out[0].items.at(-1), { type: 'link', label: 'Release Notes', href: '/releases' });
+  assert.equal(out[0].items.length, 3);
+  assert.equal(out[1].items.length, 3);
+  assert.ok(out[1].items.every((i) => typeof i === 'string'));
+});
+
+test('addLinks ignores sections that are not in the sidebar', () => {
+  const items = buildSidebar([], DOCS);
+  assert.deepEqual(addLinks(items, { nope: [{ label: 'X', href: '/x' }] }), items);
 });
