@@ -1,6 +1,6 @@
 ---
 title: "Buy it Now"
-description: "The Buy It Now feature lets you offer an auction item at a fixed price so customers can purchase it immediately instead of waiting for the auction to end. Th..."
+description: "Let customers buy an auction item instantly at a fixed price instead of waiting for the auction to end with Reflow Auctions' Buy It Now."
 ---
 
 The **Buy It Now** feature lets you offer an auction item at a fixed price so customers can purchase it immediately instead of waiting for the auction to end. This creates a hybrid experience that combines the excitement of auctions with the convenience of instant checkout.
@@ -175,14 +175,10 @@ Make sure the required **Checkout Rule** for the app has been created. This rule
 
 ## Related pages
 
-- **Make Offer**
-
-  Learn how customers can submit offers instead of buying immediately.
-
 - **[Auctions](/auction-setup/auctions)**
 
   Learn how to create, schedule, and manage auction listings.
 
-- **Checkout Rules**
+- **[Checkout Rules](/settings/checkout-settings)**
 
   Set up the required checkout rule for app-managed purchase flows.

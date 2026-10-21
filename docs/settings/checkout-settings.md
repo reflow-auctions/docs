@@ -1,6 +1,6 @@
 ---
 title: "Checkout settings"
-description: "Invoice expiration timeUse Invoice expiration time to control how long customers have to pay an invoice before it expires.  How it worksThis setting has two ..."
+description: "Set how long customers have to pay auction invoices before they expire, and configure other checkout options for Reflow Auctions."
 ---
 
 ## Invoice expiration time

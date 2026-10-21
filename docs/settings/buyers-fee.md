@@ -1,6 +1,6 @@
 ---
 title: "Buyer's Fee"
-description: "Use Buyer’s fee to add an extra charge on top of the final item price in your auctions. You can set this fee as a percentage, a fixed amount, or both. This i..."
+description: "Add a buyer's fee to the final auction price as a percentage, a fixed amount, or both, to pass platform, handling, or service costs to buyers."
 ---
 
 Use **Buyer’s fee** to add an extra charge on top of the final item price in your auctions. You can set this fee as a percentage, a fixed amount, or both. This is useful when you want to pass platform, handling, or service costs to the buyer in a consistent way.

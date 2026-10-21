@@ -1,6 +1,6 @@
 ---
 title: "Product Auction History"
-description: "The Auction History block appears on a product’s details page in Shopify admin and gives you a quick snapshot of every auction connected to that product. Use..."
+description: "See every auction connected to a product from its Shopify admin page: check live auctions, review past results, and open auction details."
 ---
 
 The **Auction History** block appears on a product’s details page in Shopify admin and gives you a quick snapshot of every auction connected to that product. Use it to check whether a product is currently running in an auction, review past results, and open the related auction details without leaving the product page.

@@ -1,6 +1,6 @@
 ---
 title: "Overview"
-description: "Reflow Auctions helps you run timed auctions directly in your Shopify store. You can group products into auction events, set bidding rules, and manage everyt..."
+description: "Run timed auctions in your Shopify store with Reflow Auctions: group products into events, set bidding rules, and manage everything in one place."
 ---
 
 Reflow Auctions helps you run timed auctions directly in your Shopify store. You can group products into auction events, set bidding rules, and manage everything from one place while keeping your catalog and inventory connected to Shopify.

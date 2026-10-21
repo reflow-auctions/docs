@@ -1,6 +1,6 @@
 ---
 title: "Draft Orders"
-description: "Draft orders are created automatically after an event is fully finished. They collect each bidder’s winning items into an order draft that you can use for th..."
+description: "When an event finishes, Reflow Auctions creates draft orders that group each bidder's winning items, ready for invoicing and payment."
 ---
 
 Draft orders are created automatically after an event is fully finished. They collect each bidder’s winning items into an order draft that you can use for the next steps in your workflow, such as sending invoices and collecting payment.

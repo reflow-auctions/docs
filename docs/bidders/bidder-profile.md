@@ -1,6 +1,6 @@
 ---
 title: "Bidder Profile"
-description: "The Bidder Profile block appears on a customer’s details page in Shopify Admin. It gives your team a quick way to manage whether that customer can participat..."
+description: "Manage whether a customer can join auctions and view their bidding activity from the Bidder Profile block on their Shopify customer page."
 ---
 
 The **Bidder Profile** block appears on a customer’s details page in Shopify Admin. It gives your team a quick way to manage whether that customer can participate in auctions and to open their bidding activity without leaving the customer record.

@@ -1,6 +1,6 @@
 ---
 title: "Storefront Customization"
-description: "You can customize how auction widgets look and behave directly from the App embeds section in the Shopify theme editor. This lets you adjust the storefront e..."
+description: "Customize how auction widgets look and behave from the App embeds section of the Shopify theme editor, with no theme code needed."
 ---
 
 You can customize how auction widgets look and behave directly from the **App embeds** section in the Shopify theme editor. This lets you adjust the storefront experience without editing theme code.

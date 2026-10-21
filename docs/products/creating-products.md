@@ -1,6 +1,6 @@
 ---
 title: "Creating Products"
-description: "Before a product can be added to an auction, it must exist in your Shopify catalog. You can create products one at a time in Shopify, or generate multiple pr..."
+description: "Add products to your Shopify catalog before auctioning them. Create them one at a time in Shopify or in bulk from the Reflow Auctions app."
 ---
 
 Before a product can be added to an auction, it must exist in your Shopify catalog. You can create products one at a time in Shopify, or generate multiple products at once from the bulk creation page in the app.

@@ -1,6 +1,6 @@
 ---
 title: "App Embed"
-description: "Reflow Auctions must be enabled in your Shopify theme before auction widgets can appear on your storefront. Once the app embed is turned on, the app can auto..."
+description: "Turn on the Reflow Auctions app embed in your Shopify theme so auction widgets can appear automatically on supported storefront pages."
 ---
 
 Reflow Auctions must be enabled in your Shopify theme before auction widgets can appear on your storefront. Once the app embed is turned on, the app can automatically place auction content on supported pages in your theme.

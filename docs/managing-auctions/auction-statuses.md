@@ -1,6 +1,6 @@
 ---
 title: "Auction Statuses"
-description: "An auction’s status shows where it is in the bidding lifecycle, from setup to completion. These labels help admins quickly understand whether an auction is u..."
+description: "Learn what each auction status means, from setup to completion, so you can tell at a glance if an auction is upcoming, live, or finished."
 ---
 
 An auction’s status shows where it is in the bidding lifecycle, from setup to completion. These labels help admins quickly understand whether an auction is upcoming, live, completed, sold early, or no longer active.

@@ -1,6 +1,6 @@
 ---
 title: "Event Metrics"
-description: "The Event details page includes Event Analytics, which gives you a complete view of how a single Event is performing. It brings together headline metrics, re..."
+description: "See how a single event is performing with Event Analytics: headline metrics, revenue, auction status breakdowns, and bidder engagement."
 ---
 
 The **Event details** page includes **Event Analytics**, which gives you a complete view of how a single Event is performing. It brings together headline metrics, revenue insights, auction status breakdowns, and bidder engagement in one place so you can evaluate performance without opening each auction individually.

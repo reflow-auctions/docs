@@ -1,6 +1,6 @@
 ---
 title: "Relisting Auctions"
-description: "Relisting lets you quickly create a new auction from one that has already ended or was canceled. The new auction copies the original auction settings and cre..."
+description: "Relist an ended or canceled auction in a few clicks. The new auction copies the original settings into the event you choose."
 ---
 
 Relisting lets you quickly create a new auction from one that has already ended or was canceled. The new auction copies the original auction settings and creates a new version inside the event you choose.
