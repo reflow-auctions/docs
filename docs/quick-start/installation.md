@@ -37,11 +37,11 @@ Shopify redirects you back to your store admin, where you can review the permiss
 
 When you are ready, click **Install app** to approve the permissions and complete the installation.
 
+![Shopify install app window showing Reflow Auctions permissions and the Install button](/img/docs/quick-start/installation-1.png)
+
 #### 7. Open the app and finish setup
 
-After installation, open **Reflow Auctions** from the **Apps** section in Shopify and follow the setup flow to start creating auction events and listings.
-
-![Shopify install app window showing Reflow Auctions permissions and the Install button](/img/docs/quick-start/installation-1.png)
+After installation, open **Reflow Auctions** from the **Apps** section in Shopify. The app opens on the **Dashboard**, where you can track your first free 50 published auctions and work through the **Quick setup guide**.
 
 :::tip
 
@@ -129,13 +129,60 @@ Do not remove app permissions or uninstall the app while an auction is actively 
 
 ## After installation
 
-Once the app is installed, the next step is to complete your initial setup and begin creating auction events.
+Once the app is installed, use the Dashboard to track your free-auction allowance and prepare your store for its first auction event.
+
+### Track your first 50 free auctions
+
+Your first 50 published auctions are free. The **Your first 50!** card on the Dashboard shows:
+
+- How many of your 50 free auctions you have used
+- A progress bar showing your current usage
+- A **Subscribe** link for choosing a plan
+
+Only published auctions count toward the limit. You can create events, add products, and save auctions as drafts without using a free-auction slot.
+
+When you publish an auction, it is added to your usage total. If you try to publish more auctions than you have remaining, publish fewer auctions or subscribe to continue with all of them. After all 50 free auctions have been used, you must subscribe before publishing additional auctions.
+
+### Complete the Quick setup guide
+
+The **Quick setup guide** appears on the Dashboard and tracks your progress through ten setup tasks:
+
+1. **Enable app embed** — Turn on the Reflow Auctions app embed in your live theme.
+2. **Add User’s Auctions page** — Give customers a page where they can view and manage auctions they have participated in.
+3. **Add Auctions Cart page** or **Add Items Summary page** — Add the customer page used by your store's checkout configuration to a storefront menu.
+4. **Review global bidding settings** — Configure your store-wide bidding rules and preferences.
+5. **Review checkout settings** — Configure invoices, buyer’s fees, and payment preferences.
+6. **Create your first event** — Create the event that will group your auctions.
+7. **Add products to your event** — Select products and configure their auction schedules, rules, and purchase options.
+8. **Customize auction widget** — Adjust the widget layout and colors to match your storefront.
+9. **Publish your first event** — Publish an auction to activate its event.
+10. **Monitor auction outcomes** — Open Event Analytics to review auction activity and results.
+
+:::note
+
+The third task depends on your store configuration. The guide displays either **Auctions Cart** or **Items Summary**.
+
+:::
+
+Select a task to view its instructions and open the relevant app page or Shopify setting. Some later tasks require you to create an event first. The progress bar and completed-task count update as you finish the setup actions.
+
+You can collapse the guide, hide it for the current session with **Remind me later**, or dismiss it. If you dismiss it, you can reopen it from **Settings**.
+
+### Next steps
 
 - Open **Apps** in Shopify
 - Select **Reflow Auctions**
-- Follow the in-app setup instructions
-- Create your first event and add auction listings
+- Work through the **Quick setup guide** on the Dashboard
+- Create your first event, add products, and publish your first auction
 
-- **[Getting Started](/quick-start/welcome)**
+- **[App Embed](/theme-setup/app-embed)**
 
-  Start with the main overview and setup guidance.
+  Enable Reflow Auctions in your Shopify theme so auction widgets can appear on your storefront.
+
+- **[Creating Events](/auction-setup/events)**
+
+  Create an event to group and manage related auctions.
+
+- **[Creating Auctions](/auction-setup/auctions)**
+
+  Add products, configure auction rules, and publish your listings.
