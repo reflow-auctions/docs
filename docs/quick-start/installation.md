@@ -181,6 +181,10 @@ You can collapse the guide, hide it for the current session with **Remind me lat
 
   Enable Reflow Auctions in your Shopify theme so auction widgets can appear on your storefront.
 
+- **[Auction automation](/settings/auction-automation)**
+
+  Automatically manage Shopify product statuses and auction product templates.
+
 - **[Creating Events](/auction-setup/events)**
 
   Create an event to group and manage related auctions.
