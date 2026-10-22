@@ -58,6 +58,7 @@ sections:
     section: settings
     pages:
       - checkout-settings
+      - auction-automation
       - buyers-fee
       - notification-center
   - label: Automation
