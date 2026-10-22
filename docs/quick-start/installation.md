@@ -133,6 +133,8 @@ Once the app is installed, use the Dashboard to track your free-auction allowanc
 
 ### Track your first 50 free auctions
 
+![Reflow Auctions Dashboard showing the Your first 50 usage tracker and Quick setup guide](/img/docs/quick-start/installation-2.png)
+
 Your first 50 published auctions are free. The **Your first 50!** card on the Dashboard shows:
 
 - How many of your 50 free auctions you have used
