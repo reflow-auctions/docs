@@ -81,7 +81,12 @@ const config = {
   plugins: [
     [
       '@docusaurus/plugin-client-redirects',
-      { redirects: [{ from: '/resources/release-notes', to: '/releases' }] },
+      {
+        redirects: [
+          { from: '/resources/release-notes', to: '/releases' },
+          { from: '/settings/auction-automation', to: '/automation/auction-automation' },
+        ],
+      },
     ],
   ],
 
