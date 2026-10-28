@@ -168,7 +168,7 @@ Click **Send invoice**. A confirmation appears, and the resend is added to the *
 
 :::tip
 
-The email uses your **Auction Invoice** email template. To change its text, see [Auction Invoice email](/bidding-purchasing/auction-cart-checkout#auction-invoice-email).
+The email uses your **Auction Invoice** email template. To change its text, see [Auction Invoice Emails](/settings/auction-invoice-emails).
 
 :::
 

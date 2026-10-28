@@ -101,7 +101,7 @@ Make sure the Auction Cart page appears in the correct storefront menu so custom
 
 Go to **Settings → Notifications** to configure the **Auction Invoice** email sent to customers when an invoice is generated.
 
-You can customize the email content and choose the language used for the notification by default. **English** and **Spanish**are available.
+You can customize the email content and choose the language used for the notification by default. **English** and **Spanish** are available. For step-by-step instructions, see [Auction Invoice Emails](/settings/auction-invoice-emails).
 
 Review the email settings before launching Auction Cart & Checkout to make sure customers receive the correct invoice information and can easily continue to payment.
 

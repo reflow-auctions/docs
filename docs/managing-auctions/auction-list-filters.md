@@ -46,6 +46,52 @@ Combine **Status** and **Event** filters when you need to find a smaller set of 
 
 :::
 
+### All available filters
+
+Besides **Status** and **Event**, you can filter the auction list by sales results and bidding values.
+
+![Auctions list with the Number of bids filter open, showing From and To fields, next to the Status, Event, Features, Sale type, Payment status, Bid increment, Starting bid and Current bid filters](/img/docs/managing-auctions/auction-list-filters-5.png)
+
+| Filter | What it finds |
+|---|---|
+| **Status** | Auctions in a specific state, such as scheduled, running or completed. |
+| **Event** | Auctions that belong to one event. |
+| **Features** | Auctions with **Buy It Now** or **Make Offer** turned on. |
+| **Sale type** | How the auction ended: **Auction**, **Buy It Now** or **No sale**. |
+| **Payment status** | The payment state of the auction's invoice, for example **Invoice open**, **Paid** or **Payment expired**. |
+| **Number of bids** | Auctions with a number of bids in a range. |
+| **Bid increment** | Auctions with a bid increment in a range. |
+| **Starting bid** | Auctions with a starting bid in a range. |
+| **Current bid** | Auctions with a current bid in a range. |
+
+:::note
+
+**Sale type** and **Payment status** appear only when [Auction Cart & Checkout](/bidding-purchasing/auction-cart-checkout) is enabled. **Features** appears only when Buy It Now or Make Offer is enabled for your store.
+
+:::
+
+### Filter by a range
+
+**Number of bids**, **Bid increment**, **Starting bid** and **Current bid** filter by a range of values.
+
+#### 1. Open the filter
+
+Click the filter you want to use, for example **Number of bids**.
+
+#### 2. Enter the range
+
+Enter a value in **From**, **To**, or both. Fill in only **From** to find values from that number up, or only **To** to find values up to that number. Number of bids takes whole numbers; the money filters accept decimals.
+
+#### 3. Review the results
+
+The table updates to show only the auctions in that range. Click **Clear** in the filter to remove it.
+
+:::tip
+
+Use **Number of bids** with **From** and **To** set to `0` to find auctions that didn't get any bids, for example to [relist them](/managing-auctions/relisting-auctions).
+
+:::
+
 ### Sort the list to prioritize your work
 
 Sorting helps you organize auctions by the information that matters most for your task. This makes it easier to review time-sensitive auctions, compare values, or find the next item that needs attention.
