@@ -23,13 +23,27 @@ Go to the area where events are managed.
 
 Add a clear, recognizable title so your team can easily identify the event.
 
-#### 3. Set the estimated end date and time
+#### 3. Add a description (optional)
+
+Use **Description** for internal notes about the event, such as what's included or who's running it. It can be up to 500 characters.
+
+#### 4. Set the estimated end date and time
 
 Choose the date and time you expect the event to finish.
 
-#### 4. Save the event
+#### 5. Save the event
 
-Once saved, the event is ready for auctions to be added and managed.
+Click **Save** in the save bar at the top of the page. Once saved, the event is ready for auctions to be added and managed.
+
+![Create event page with the Title, Description and Estimated end time fields, and the Unsaved changes bar with Discard and Save buttons](/img/docs/auction-setup/events-5.png)
+
+### View the event description
+
+On the **Event Details** page, click the arrow next to the event title to show the description.
+
+![Event Details page with the description popover open below the event title](/img/docs/auction-setup/events-6.png)
+
+The description is only visible to your team in the admin. Customers don't see it on the storefront.
 
 ### How event timing works
 
@@ -51,7 +65,7 @@ An event is considered finished only when both of these conditions are true:
 After an event is created, you can still make limited changes depending on its status.
 
 - **Delete an event:** You can delete the event at any time before the first bid is placed.
-- **Edit an event:** You can update the title and estimated end date and time, but only before the estimated end time has passed.
+- **Edit an event:** You can update the title, description, and estimated end date and time, but only before the estimated end time has passed.
 
 :::warning
 
