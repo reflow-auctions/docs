@@ -79,6 +79,52 @@ If you want winners to receive invoices automatically, confirm that **Invoice au
 
 :::
 
+## Archiving events
+
+Archive events you've finished working with to keep your **Events** list focused on current and upcoming events. Archiving doesn't delete anything: the event's auctions, bids, orders, activity log and analytics are all kept.
+
+### When you can archive an event
+
+You can archive an event when both of these are true:
+
+- The event's estimated end time has passed.
+- The event has no **Scheduled** or **Running** auctions.
+
+If either condition isn't met, the app shows a **Cannot archive** message explaining why.
+
+### Archive an event
+
+#### 1. Open the event
+
+Open the **Event Details** page of the event you want to archive.
+
+#### 2. Open More actions
+
+In the top-right corner of the page, click **More actions**.
+
+#### 3. Select Archive event
+
+Choose **Archive event**, then click **Archive Event** in the confirmation window.
+
+The event moves to the **Archived** tab on the **Events** page, and the archive is recorded in the event's **Activity log**.
+
+### What changes when an event is archived
+
+- The event no longer appears in the active Events lists. Find it in the **Archived** tab.
+- The event's page becomes read-only. You can't edit or delete its auctions or re-publish canceled auctions until you unarchive it.
+- The event can't be selected when you create new auctions.
+- Its data still counts in analytics, and archived events are counted on the [Dashboard](/analytics-reporting/dashboard).
+
+### Unarchive an event
+
+To make an archived event active again, open it from the **Archived** tab and click **Unarchive event**. Confirm in the window that opens. The event returns to the active Events lists, and its auctions, orders, bids and history stay unchanged.
+
+:::tip
+
+To archive events automatically when they end, use the **Archive event** action in [Shopify Flow](/automation/shopify-flow#archive-event).
+
+:::
+
 ## **Export event data**
 
 You can export event data directly from the **Event Details** page using the **More actions** menu.
@@ -146,3 +192,7 @@ If one or more auctions were still running after the estimated end time, the eve
 ### Can I change the event after creating it?
 
 Yes, but only in limited cases. You can update the title and estimated end date and time before the estimated end time has passed. You can delete the event only before the first bid is placed.
+
+### Does archiving an event delete its data?
+
+No. Archiving only moves the event to the **Archived** tab. Its auctions, bids, orders, activity log and analytics are kept, and you can unarchive the event at any time.

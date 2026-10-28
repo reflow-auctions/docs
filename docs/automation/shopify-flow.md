@@ -115,7 +115,7 @@ Use these triggers to start workflows based on event and auction activity.
 
 - Remove temporary tags or collections
 - Send a summary notification to your team
-- Start post-event cleanup tasks
+- Start post-event cleanup tasks, such as [archiving the event](#archive-event)
 
 ### Auction Starts
 
@@ -145,6 +145,22 @@ Use these triggers to start workflows based on event and auction activity.
 - Notify staff that bidding has ended
 - Trigger follow-up workflows for fulfillment or reporting
 
+## Available actions
+
+Use these actions in your workflows to make changes in Reflow Auctions.
+
+### Archive event
+
+**What it does:** Archives a Reflow Auctions event, the same as [archiving it from the admin](/auction-setup/events#archiving-events).
+
+**Required field:** **Event ID**. Map it to the **Event ID** from the **Event Ends** or **Event Starts** trigger.
+
+**When it works:** Only after the event's estimated end time has passed and the event has no scheduled or running auctions. Otherwise the action fails and the event isn't archived.
+
+**Common use:** Combine it with the **Event Ends** trigger to archive every event automatically when it finishes.
+
+The archive is recorded in the event's **Activity log** as **Event archived by Shopify Flow**.
+
 ## Tips for building reliable workflows
 
 - Use clear workflow names so your team can quickly understand what each automation does.
@@ -154,7 +170,7 @@ Use these triggers to start workflows based on event and auction activity.
 
 :::note
 
-The exact list of available actions in Shopify Flow depends on the apps installed in your store. Reflow Auctions provides the trigger, and you can combine it with Shopify or third-party actions inside the same workflow.
+The exact list of available actions in Shopify Flow depends on the apps installed in your store. Reflow Auctions provides the triggers and the **Archive event** action, and you can combine them with Shopify or third-party actions inside the same workflow.
 
 :::
 

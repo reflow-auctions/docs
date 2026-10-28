@@ -72,6 +72,7 @@ The Dashboard groups events by status so you can quickly understand how much of 
 
 - **Active**: Events that are currently running or available to participants.
 - **Finished**: Events that have ended.
+- **Archived**: Events you've [archived](/auction-setup/events#archiving-events) to keep them out of the active Events lists.
 
 ## Auction status summary
 
