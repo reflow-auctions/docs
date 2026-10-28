@@ -43,6 +43,7 @@ sections:
       - buy-it-now
       - auction-cart-checkout
       - auction-cart-checkout-common-questions
+      - invoices
       - draft-orders
   - label: Storefront Features
     section: storefront-features
