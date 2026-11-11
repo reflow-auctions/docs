@@ -67,6 +67,7 @@ sections:
     section: automation
     pages:
       - auction-automation
+      - auction-collections
       - shopify-flow
   - label: Resources
     section: resources

@@ -104,6 +104,10 @@ Check whether **Auction product status** is enabled, then review the product's a
 
   Enable Reflow Auctions in your live theme so auction widgets can appear.
 
+- **[Auction collections](/automation/auction-collections)**
+
+  Keep Shopify collections of running, scheduled, Buy It Now and ending-soon auctions up to date automatically.
+
 - **[Shopify Flow](/automation/shopify-flow)**
 
   Build separate workflows triggered by Reflow Auctions events and auction activity.
