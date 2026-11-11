@@ -1,124 +1,140 @@
 ---
 title: "Relisting Auctions"
-description: "Relist an ended or canceled auction in a few clicks. The new auction copies the original settings into the event you choose."
+description: "Bring auctions from previous events into a new event: filter by outcome, choose the auctions, set a new schedule and relist them in one go."
 ---
 
-Relisting lets you quickly create a new auction from one that has already ended or was canceled. The new auction copies the original auction settings and creates a new version inside the event you choose.
+Relisting lets you bring auctions from previous events into a new event, for example items that didn't sell or whose invoice expired. Relisting creates new auctions. The original auctions and their history stay unchanged.
 
-:::info
+You can relist auctions in two ways:
 
-When you relist an auction, all auction settings are duplicated except the start and end dates. The new auction is created as a **Draft** by default.
+- **From the event page**: relist auctions straight into the event as drafts. See [Relist auctions into an event](#relist-auctions-into-an-event).
+- **From the Add auctions page**: add relisted items to the list of products you're adding, then publish them or save them as drafts. See [Relist while adding auctions](#relist-while-adding-auctions).
 
-:::
-
-By default, the auction start time is set to the time you relist it, and the auction end time is aligned with the selected event’s estimated end time. You can change both values before saving.
-
-### What carries over when you relist
-
-- Auction settings such as starting bid and bid increment
-- Buy It Now settings, if they were enabled on the original auction
-- The item connected to the original auction
-
-### What changes when you relist
-
-- You choose which event the new auction will be added to
-- You can set a new start date and time
-- You can set a new end date and time
-- The new auction is saved as a **Draft**
-
-:::note
-
-Relisting creates a new auction. It does not reopen or change the original ended or canceled auction.
-
-:::
-
-## Relist multiple auctions from an event
-
-You can relist several auctions at once from the event auction list. This is useful when you want to reuse multiple unsold or canceled items in a new event.
+## Relist auctions into an event
 
 #### 1. Open the event
 
-Go to the event that contains the auctions you want to reuse.
+Open the event you want to add the auctions to.
 
-#### 2. Select the auctions
+#### 2. Open Relist auctions
 
-In the auction list, select one or more auctions that have ended or been canceled.
+Click **More actions** and select **Relist auctions**.
 
-#### 3. Open the bulk actions menu
+![Event page with the More actions menu open and Relist auctions highlighted](/img/docs/managing-auctions/relisting-auctions-1.png)
 
-Click the actions menu for the selected auctions, then choose **Relist auction**.
+#### 3. Find the auctions to relist
 
-#### 4. Review the new auction details
+The **Relist auctions** window shows the **Destination event** at the top. To find auctions:
 
-Choose the destination event, then review the default start and end dates.
+- In **Previous events**, select one or more events, or **All events**.
+- Or use **Search products** to find a product across all previous events.
+- Use **Outcome** to show only auctions with a certain result. See [Outcomes](#outcomes).
 
-#### 5. Save the relisted auctions
+Click **Clear all filters** to start over.
 
-Confirm the action to create new draft auctions.
+![Relist auctions window with one previous event selected, a list of Sold and Unsold auctions, two of them checked, and the New auction schedule fields](/img/docs/managing-auctions/relisting-auctions-2.png)
 
-![Event auction list showing multiple auctions selected and the Relist auction option in the bulk actions menu](/img/docs/managing-auctions/relisting-auctions-1.png)
+#### 4. Select the auctions
 
-## Relist a single auction
+Check the auctions you want to relist. The table shows each auction's **Product**, **Previous event**, **Outcome** and **Available** inventory. The number of selected auctions appears below the table. Click **Clear selection** to uncheck them all.
 
-You can also relist an auction directly from its details page.
+#### 5. Set the new schedule
 
-#### 1. Open the auction
+Under **New auction schedule**, set the **Start** and **End** date and time for the new auctions. By default, they start now and end at the event's estimated end time. The end must be after the start.
 
-Open the ended or canceled auction you want to relist.
+#### 6. Relist
 
-#### 2. Open More actions
+Click **Relist [number] auctions**. The new auctions are added to the event as **Draft**, and a confirmation shows how many were relisted.
 
-Click **More actions** in the top-right corner of the auction page.
+![Event auction list showing the two relisted auctions with Draft status and a confirmation saying 2 auctions relisted](/img/docs/managing-auctions/relisting-auctions-3.png)
 
-#### 3. Choose Relist auction
+The new auctions keep the original auctions' settings, such as starting bid, bid increment, popcorn bidding, Buy It Now and Make offer. Review them, then publish them when you're ready.
 
-Select **Relist auction** from the menu.
+:::note
 
-#### 4. Set the event and dates
-
-In the relist window, select the destination event and review or update the start and end date fields.
-
-#### 5. Create the draft auction
-
-Click **Relist auction** to create the new draft auction.
-
-![Auction details page with the More actions menu open and Relist auction selected](/img/docs/managing-auctions/relisting-auctions-2.png)
-
-![Relist auction dialog showing event selection and editable auction start and end dates](/img/docs/managing-auctions/relisting-auctions-3.png)
-
-## How the dates are set
-
-- **Start date and time:** Defaults to the moment you relist the auction
-- **End date and time:** Defaults to the selected event’s estimated end time
-- **Status:** The new auction is created as a draft
-
-:::tip
-
-Review the auction end date before saving, especially if you are relisting into a different event. This helps make sure the auction ends when you expect.
+When you relist a large number of auctions, a progress bar shows how many have been relisted so far.
 
 :::
 
-## Best practices
+## Relist while adding auctions
 
-- Use relisting for items that did not sell and need to appear in a future event
-- Double-check the destination event before creating the new draft
-- Review copied settings such as starting bid, bid increment, and Buy It Now configuration
-- Activate the draft only after confirming the schedule and pricing are correct
+#### 1. Open Add auctions
+
+Open the event and click **Add auction**.
+
+#### 2. Open Relist auctions
+
+In the **Relist auctions** card, click **Select auctions to relist**.
+
+![Add auctions to event page with an arrow pointing to the Relist auctions card and its Select auctions to relist button](/img/docs/managing-auctions/relisting-auctions-4.png)
+
+#### 3. Choose the auctions
+
+Find and select auctions the same way as in [Relist auctions into an event](#relist-auctions-into-an-event). Your selections are kept when you change filters.
+
+#### 4. Add them to the list
+
+Click **Add [number] auctions**. The products are added to **Products/collections** on the page.
+
+#### 5. Publish or save as draft
+
+Review the **Properties**, such as dates, starting bid and bid increment, then click **Publish** or **Save as draft**.
+
+When you relist this way, the new auctions use the properties on the **Add auctions** page instead of the original auctions' settings. Buy It Now and Make offer are turned off.
+
+## Which auctions you can relist
+
+The **Relist auctions** window shows auctions from previous events that have ended: their estimated end time has passed and none of their auctions are still running. The event you're relisting into isn't included.
+
+From those events, you can relist auctions that ended, sold, or were canceled. If a product was in the same event more than once, only its latest auction is shown.
+
+You can't select an auction when:
+
+- The product has no available inventory. Products that don't track inventory, or that continue selling when out of stock, can always be selected.
+- The product is already in the destination event.
+
+:::info
+
+Only products with available inventory can be selected.
+
+:::
+
+### Outcomes
+
+Each auction shows its **Outcome**. Use the **Outcome** filter to narrow the list:
+
+| Filter | Shows |
+|---|---|
+| **All** | Every auction you can relist |
+| **Unsold** | Every auction that didn't result in a sale: No sale, Unsold, Invoice canceled and Invoice expired |
+| **No sale** | Auctions that ended without bids, or that were canceled |
+| **Invoice canceled** | Auctions whose invoice was canceled |
+| **Invoice expired** | Auctions whose invoice expired before it was paid |
+| **Sold (stock available)** | Sold auctions whose product still has stock |
+
+The **Invoice canceled** and **Invoice expired** filters appear for stores that use [Auction Cart & Checkout](/bidding-purchasing/auction-cart-checkout).
+
+## If some auctions can't be relisted
+
+If any selected auction can't be relisted, nothing is relisted. The window lists the reasons and how many auctions each one affects. Uncheck those auctions, or fix the issue, and try again.
 
 ## Frequently asked questions
 
 ### Does relisting change the original auction?
 
-No. Relisting creates a separate new draft auction and leaves the original auction unchanged.
-
-### Can I relist canceled auctions and ended auctions?
-
-Yes. You can relist auctions that were previously ended or canceled.
+No. Relisting creates new auctions. The original auctions and their history are preserved.
 
 ### Is the new auction immediately active?
 
-No. The new auction is created as a draft by default.
+When you relist from the event page, the new auctions are created as drafts. When you relist from the **Add auctions** page, you choose whether to publish them or save them as drafts.
 
-### Can I update the dates before saving?
+### Can I relist auctions from several events at once?
 
-Yes. You can change both the start and end date and time in the relist dialog before creating the new auction.
+Yes. Select several events in **Previous events**, or select **All events**.
+
+## Related pages
+
+- [Creating events](/auction-setup/events)
+- [Creating auctions](/auction-setup/auctions)
+- [Auction statuses](/managing-auctions/auction-statuses)
+- [Bulk actions](/managing-auctions/bulk-actions)
