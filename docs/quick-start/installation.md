@@ -192,18 +192,19 @@ If you subscribe before you've used all 50, your remaining free auctions stay fr
 
 ### Complete the Quick setup guide
 
-The **Quick setup guide** appears on the Dashboard and tracks your progress through ten setup tasks:
+The **Quick setup guide** appears on the Dashboard and tracks your progress through 11 setup tasks:
 
 1. **Enable app embed** — Turn on the Reflow Auctions app embed in your live theme.
 2. **Add User’s Auctions page** — Give customers a page where they can view and manage auctions they have participated in.
 3. **Add Auctions Cart page** or **Add Items Summary page** — Add the customer page used by your store's checkout configuration to a storefront menu.
-4. **Review global bidding settings** — Configure your store-wide bidding rules and preferences.
-5. **Review checkout settings** — Configure invoices, buyer’s fees, and payment preferences.
-6. **Create your first event** — Create the event that will group your auctions.
-7. **Add products to your event** — Select products and configure their auction schedules, rules, and purchase options.
-8. **Customize auction widget** — Adjust the widget layout and colors to match your storefront.
-9. **Publish your first event** — Publish an auction to activate its event.
-10. **Monitor auction outcomes** — Open Event Analytics to review auction activity and results.
+4. **Add Auctions page** — Add the Auctions page to your storefront menu so customers can see all running and scheduled auctions in one place.
+5. **Review global bidding settings** — Configure your store-wide bidding rules and preferences.
+6. **Review checkout settings** — Configure invoices, buyer’s fees, and payment preferences.
+7. **Create your first event** — Create the event that will group your auctions.
+8. **Add products to your event** — Select products and configure their auction schedules, rules, and purchase options.
+9. **Customize auction widget** — Adjust the widget layout and colors to match your storefront.
+10. **Publish your first event** — Publish an auction to activate its event.
+11. **Monitor auction outcomes** — Open Event Analytics to review auction activity and results.
 
 :::note
 
