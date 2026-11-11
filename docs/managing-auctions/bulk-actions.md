@@ -24,8 +24,9 @@ After selecting multiple auctions, you can apply actions such as:
 - Edit the **start date** or **end date**
 - **Enable** or **disable Buy It Now**
 - **Hide** or **Show Widget**
-- **Relist Auction**
 - **Delete** auctions
+
+To relist several auctions at once, use **Relist auctions** on the event page. See [Relisting auctions](/managing-auctions/relisting-auctions).
 
 ### Bulk edit auctions
 
