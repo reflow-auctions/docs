@@ -60,6 +60,7 @@ sections:
     pages:
       - checkout-settings
       - auction-invoice-emails
+      - last-chance-reminders
       - buyers-fee
       - notification-center
   - label: Automation
