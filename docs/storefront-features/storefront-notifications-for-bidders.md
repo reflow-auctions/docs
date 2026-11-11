@@ -24,8 +24,6 @@ A **Notifications** bell icon appears in the top-right area of Reflow Auctions s
 
 ![My Auctions page on a phone with an arrow pointing to the Notifications bell icon in the top-right corner](/img/docs/storefront-features/storefront-notifications-for-bidders-1.png)
 
-![Auctions page with the Notifications bell icon and an unread dot next to the My Auctions and Items summary links](/img/docs/storefront-features/storefront-notifications-for-bidders-4.png)
-
 The panel lets bidders review updates without leaving the page. If a notification is linked to an auction, invoice, or order, bidders can open it directly from the notification.
 
 If you've added the **Auction Notifications** page to your store menu, bidders can also open it from the menu. See [Auction Notifications page](#auction-notifications-page).
@@ -109,12 +107,24 @@ The **Auction Notifications** page shows each bidder their auction, invoice, and
 
 The page is available on your store at `/apps/auctions/auction-notifications`. You'll also find the link on the **Auction Notifications** card in **Settings** > **Pages**. Bidders who aren't signed in see a sign-in screen.
 
+![Auction Notifications storefront page with All, Auctions, Invoices and Orders tabs showing unread counts, a Mark all as read button, and unread outbid notifications with View auction links. The Auction Notifications menu link shows a badge with 19 unread notifications](/img/docs/storefront-features/storefront-notifications-for-bidders-5.png)
+
+### What each notification shows
+
+- A blue dot if the notification is unread
+- The item's image, or an icon when no image is available
+- A title, for example **You've been outbid**, and a short description, for example *Another bidder now has the highest bid on Green112.*
+- A link to the related item, such as **View auction**, **View invoice**, or **View order**
+- How long ago it happened, for example **2h ago**
+- An actions menu (**…**) to mark the notification as read or unread
+
 ### What bidders can do on the page
 
-- Switch between the **All**, **Auctions**, **Invoices**, and **Orders** tabs, each with its unread count
+- Switch between the **All**, **Auctions**, **Invoices**, and **Orders** tabs. The number on each tab is how many unread notifications it has.
 - Select **Mark all as read** to clear every unread notification
 - Open a notification's actions menu and select **Mark as read** or **Mark as unread**
-- Select a notification to open the related item, for example **View auction**, **View invoice**, or **View order**
+- Select a notification or its link to open the related auction, invoice, or order. The notification is then marked as read.
+- Select **Back to previous page** to return to where they came from
 - Scroll down to load older notifications
 
 ### Add the Auction Notifications page to your store menu

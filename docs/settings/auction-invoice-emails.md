@@ -65,8 +65,15 @@ When a default language is set, **all** customers receive the invoice email in t
 
 :::
 
+:::tip
+
+To remind winners to pay before their invoice expires, turn on [Last chance reminders](/settings/last-chance-reminders).
+
+:::
+
 ## Related pages
 
+- [Last chance reminders](/settings/last-chance-reminders)
 - [Invoices](/bidding-purchasing/invoices)
 - [Auction Cart & Checkout](/bidding-purchasing/auction-cart-checkout)
 - [Checkout settings](/settings/checkout-settings)
