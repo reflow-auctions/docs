@@ -133,17 +133,62 @@ Once the app is installed, use the Dashboard to track your free-auction allowanc
 
 ### Track your first 50 free auctions
 
-![Reflow Auctions Dashboard showing the Your first 50 usage tracker and Quick setup guide](/img/docs/quick-start/installation-2.png)
+![Dashboard with the Your first 50! card showing 5 of 50 free auctions used, a progress bar and a Subscribe link, above the Quick setup guide](/img/docs/quick-start/installation-2.png)
 
-Your first 50 published auctions are free. The **Your first 50!** card on the Dashboard shows:
+Your first 50 published auctions are free. You aren't charged usage fees for them, even when they end with bids and sell.
 
-- How many of your 50 free auctions you have used
+The **Your first 50!** card on the Dashboard shows:
+
+- How many of your 50 free auctions you have used, for example **12 of 50 free auctions used**
 - A progress bar showing your current usage
-- A **Subscribe** link for choosing a plan
+- A **Subscribe** link for choosing a plan, if you don't have a subscription yet
 
-Only published auctions count toward the limit. You can create events, add products, and save auctions as drafts without using a free-auction slot.
+#### What counts toward the limit
 
-When you publish an auction, it is added to your usage total. If you try to publish more auctions than you have remaining, publish fewer auctions or subscribe to continue with all of them. After all 50 free auctions have been used, you must subscribe before publishing additional auctions.
+An auction uses a free slot the first time it's published, that is, when its status becomes **Active**. This includes auctions you publish when you create them, publish later from **Draft**, or create by relisting, manually or with Shopify Flow.
+
+These don't use a free slot:
+
+- Creating events
+- Adding products
+- Saving auctions as **Draft**
+- Publishing the same auction again, for example after you cancel it and select **Keep auction**
+
+:::note
+
+A used slot isn't returned. Canceling or deleting a published auction doesn't give you that free auction back.
+
+:::
+
+#### Publishing more auctions than you have left
+
+If you don't have a subscription and try to publish more auctions than you have remaining, the auctions aren't published and the app shows how many free auctions you have left. For example: *You have 45 free auctions remaining, but you're trying to publish 50. Remove 5 auctions or subscribe to publish all 50.*
+
+![Add auctions to event page with an error banner saying 45 free auctions remain while 50 auctions are being published, with a subscribe link](/img/docs/quick-start/installation-3.png)
+
+Remove auctions until you're within your remaining free auctions, or click **subscribe** in the error to choose a plan and publish all of them.
+
+When Shopify Flow relists auctions and you don't have a subscription, only as many auctions as you have free slots left are relisted.
+
+#### Free auction notifications
+
+Reflow Auctions lets you know how your free auctions are going in the [Notification Center](/settings/notification-center) and by email:
+
+- **After 25 auctions:** *You're halfway through your free auctions!* shows how many you've used and how many remain.
+- **After 50 auctions:** *You've reached your free auction limit.* If you don't have a subscription, the notification includes a **Subscribe** link.
+
+Each notification is sent only once.
+
+#### After you use all 50 free auctions
+
+- **Without a subscription:** you can't publish new auctions until you subscribe. You can still open the app and manage the auctions you've already published.
+- **With a subscription:** auctions you publish from now on are billed under your plan when they end with bids. The **Your first 50!** card no longer appears on the Dashboard.
+
+:::tip
+
+If you subscribe before you've used all 50, your remaining free auctions stay free. The card keeps tracking them until they're used.
+
+:::
 
 ### Complete the Quick setup guide
 
